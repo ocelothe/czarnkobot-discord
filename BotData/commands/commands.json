@@ -15,7 +15,7 @@
           "authorname": "Czarnkobot",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme - Wysyła losowego mema z naszym ulubionym ministrem.\n▸changelog - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
+          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸help/h/pomoc - Wyświetla tą kartę.\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***\n▸changelog/zmiany - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
           "image": "",
           "footer": "Czarnkobot, v.0.1.4 by Oce Industries.",
@@ -62,7 +62,7 @@
           "varname": "pytanie",
           "vartype": "Text",
           "savevartype": "temp",
-          "param": "1"
+          "param": "1+"
         },
         {
           "name": "czy jest pytanie",
@@ -130,7 +130,7 @@
               "description": "Abym odpowiedział, muszę najpierw znać pytanie...",
               "thumbnail": "",
               "image": "",
-              "footer": "Czarnkobot, v.0.1.3 by Oce Industries.",
+              "footer": "Czarnkobot, v.0.1.4 by Oce Industries.",
               "timestamp": "false",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -158,7 +158,7 @@
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, v.0.1.4\n- Poprawiono buga z embedami komendy `cb!8ball`.\n***Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!***\nhttps://discord.gg/dakPqvc8T6",
+          "description": "Czarnkobot, v.0.1.4\n- Poprawiono buga z embedami komendy `cb!8ball`.\n- Dodano aliasy komend takich jak help, meme, changelog (wszystkie możliwości wywołania danej komendy są zapisane po ukośnikach przy jej opisie w karcie pomocy.\n***Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!***\nhttps://discord.gg/dakPqvc8T6",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
           "image": "",
           "footer": "Czarnkobot, v.0.1.4 by Oce Industries.",
@@ -192,7 +192,7 @@
               "type": "Send Embed",
               "messageActionRows": [],
               "channelname": "${dbsVars.CommandChannel.id}",
-              "color": "4088FF",
+              "color": "70FFC9",
               "title": "Oto twój mem!",
               "url": "",
               "authorname": "Czarnkobot",
@@ -201,7 +201,7 @@
               "description": "",
               "thumbnail": "",
               "image": "${tempVars.Response.tresc}",
-              "footer": "Czarnkobot, v.0.1.3 by Oce Industries.",
+              "footer": "Czarnkobot, v.0.1.4 by Oce Industries.",
               "timestamp": "false",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -221,6 +221,130 @@
       "name": "test",
       "description": "Testowa komenda",
       "options": []
+    },
+    {
+      "name": "h",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "4088FF",
+          "title": "Pomoc",
+          "url": "",
+          "authorname": "Czarnkobot",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸help/h/pomoc - Wyświetla tą kartę.\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***\n▸changelog/zmiany - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
+          "image": "",
+          "footer": "Czarnkobot, v.0.1.4 by Oce Industries.",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "pomoc",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "4088FF",
+          "title": "Pomoc",
+          "url": "",
+          "authorname": "Czarnkobot",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸help/h/pomoc - Wyświetla tą kartę.\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***\n▸changelog/zmiany - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
+          "image": "",
+          "footer": "Czarnkobot, v.0.1.4 by Oce Industries.",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "zmiany",
+      "actions": [
+        {
+          "name": "Changelog_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "46FF00",
+          "title": "Changelog",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Czarnkobot, v.0.1.4\n- Poprawiono buga z embedami komendy `cb!8ball`.\n- Dodano aliasy komend takich jak help, meme, changelog (wszystkie możliwości wywołania danej komendy są zapisane po ukośnikach przy jej opisie w karcie pomocy.\n***Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!***\nhttps://discord.gg/dakPqvc8T6",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
+          "image": "",
+          "footer": "Czarnkobot, v.0.1.4 by Oce Industries.",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "mem",
+      "actions": [
+        {
+          "name": "randomizer_1",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "randomizer",
+          "min": "1",
+          "max": "24",
+          "savevartype": "temp"
+        },
+        {
+          "name": "responsesheet_1",
+          "category": "Spreadsheet",
+          "type": "Get Row",
+          "trueActions": [
+            {
+              "name": "help menu_1",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "70FFC9",
+              "title": "Oto twój mem!",
+              "url": "",
+              "authorname": "Czarnkobot",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "",
+              "thumbnail": "",
+              "image": "${tempVars.Response.tresc}",
+              "footer": "Czarnkobot, v.0.1.4 by Oce Industries.",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "selectedsheet": "randomeme.csv",
+          "colheader": "liczba",
+          "colval": "${tempVars.randomizer}",
+          "rowvariable": "Response",
+          "savevartype": "temp"
+        }
+      ]
     }
   ]
 }
