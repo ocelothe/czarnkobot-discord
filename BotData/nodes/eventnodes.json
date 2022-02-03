@@ -561,7 +561,7 @@
       "rtype": "Bot Action",
       "rsubtype": "Set Bot Activity",
       "formdata": [
-        "▸Wersja 0.1.3  | ▸Prefix: cb!",
+        "▸Wersja 0.1.4  | ▸Prefix: cb!",
         "WATCHING",
         ""
       ],
