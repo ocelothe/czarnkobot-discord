@@ -1,0 +1,226 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "4088FF",
+          "title": "Pomoc",
+          "url": "",
+          "authorname": "Czarnkobot",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme - Wysyła losowego mema z naszym ulubionym ministrem.\n▸changelog - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
+          "image": "",
+          "footer": "Czarnkobot, v.0.1.3 by Oce Industries.",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "perms": [],
+      "actions": [
+        {
+          "name": "Changelog",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FF003F",
+          "title": "Info",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Czarnkobot, v.0.1.3\nPowered by Oce Industries.\nMój serwer pomocy: https://discord.gg/dakPqvc8T6\nZaproś mnie na serwer: https://bit.ly/Czarnkobot\nGłówny serwer autorów: https://discord.gg/VVdxvSmkvA\nAby zobaczyć listę komend wpisz: cb!help.",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
+          "image": "",
+          "footer": "Czarnkobot, v.0.1.3 by Oce Industries.",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "8ball",
+      "actions": [
+        {
+          "name": "pytanie",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "pytanie",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "czy jest pytanie",
+          "category": "Variable",
+          "type": "Check If Variable Exists",
+          "trueActions": [
+            {
+              "name": "randomizer",
+              "category": "Variable",
+              "type": "Generate Random Number",
+              "messageActionRows": [],
+              "varname": "randomizer",
+              "min": "1",
+              "max": "10",
+              "savevartype": "temp"
+            },
+            {
+              "name": "responsesheet",
+              "category": "Spreadsheet",
+              "type": "Get Row",
+              "trueActions": [
+                {
+                  "name": "help menu_2",
+                  "category": "Message",
+                  "type": "Send Embed",
+                  "messageActionRows": [],
+                  "channelname": "${dbsVars.CommandChannel.id}",
+                  "color": "12FF77",
+                  "title": "*Pytanie: ${tempVars.pytanie}*",
+                  "url": "",
+                  "authorname": "",
+                  "authorimageurl": "",
+                  "authorlink": "",
+                  "description": "🎱${tempVars.Response.tresc}",
+                  "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
+                  "image": "",
+                  "footer": "Czarnkobot, v.0.1.3 by Oce Industries.",
+                  "timestamp": "false",
+                  "savetovariable": "",
+                  "savetovariabletype": "temp"
+                }
+              ],
+              "falseActions": [],
+              "messageActionRows": [],
+              "selectedsheet": "8ball - sheet1.csv",
+              "colheader": "liczba",
+              "colval": "${tempVars.randomizer}",
+              "rowvariable": "Response",
+              "savevartype": "temp"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "Changelog_2",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "FF003F",
+              "title": "",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "Abym odpowiedział, muszę najpierw znać pytanie...",
+              "thumbnail": "",
+              "image": "",
+              "footer": "Czarnkobot, v.0.1.3 by Oce Industries.",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "messageActionRows": [],
+          "varname": "pytanie",
+          "savevartype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "changelog",
+      "perms": [],
+      "actions": [
+        {
+          "name": "Changelog_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "46FF00",
+          "title": "Changelog",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Czarnkobot, v.0.1.3\n- Dodano kilka memów do randomizera komendy `meme`.\n- Bugfixy\n- Od teraz bot wysyła obrazki/odpowiedzi w embedach, a nie jako zwykłą wiadomość.\n***Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!***\nhttps://discord.gg/dakPqvc8T6",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
+          "image": "",
+          "footer": "Czarnkobot, v.0.0.2α by Oce Industries.",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "meme",
+      "actions": [
+        {
+          "name": "randomizer_1",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "randomizer",
+          "min": "1",
+          "max": "24",
+          "savevartype": "temp"
+        },
+        {
+          "name": "responsesheet_1",
+          "category": "Spreadsheet",
+          "type": "Get Row",
+          "trueActions": [
+            {
+              "name": "help menu_1",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "4088FF",
+              "title": "Oto twój mem!",
+              "url": "",
+              "authorname": "Czarnkobot",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "",
+              "thumbnail": "",
+              "image": "${tempVars.Response.tresc}",
+              "footer": "Czarnkobot, v.0.1.3 by Oce Industries.",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "selectedsheet": "randomeme.csv",
+          "colheader": "liczba",
+          "colval": "${tempVars.randomizer}",
+          "rowvariable": "Response",
+          "savevartype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "description": "Testowa komenda",
+      "options": []
+    }
+  ]
+}
