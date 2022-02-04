@@ -34,8 +34,8 @@
           "id": "68078daa-9f94-47b5-9020-f520e4654db8"
         }
       ],
-      "x": 477,
-      "y": 53,
+      "x": 689,
+      "y": 60,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -46,10 +46,10 @@
         "Czarnkobot",
         "",
         "",
-        "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸help/h/pomoc - Wyświetla tą kartę.\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***\n▸changelog/zmiany - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
+        "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸help/h/pomoc - Wyświetla tą kartę.\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme/mem - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***\n▸changelog/zmiany - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
         "",
-        "Czarnkobot, v.0.1.4 by Oce Industries.",
+        "Czarnkobot, v.0.1.5 by Oce Industries.",
         "false",
         "",
         "temp"
@@ -81,13 +81,14 @@
         {
           "label": "responses",
           "connections": [
+            "80012e7f-f9aa-4d07-83a4-7ad1805e026e",
             "19ffa8bf-2dfa-45e6-b20f-ee5113be1df4"
           ]
         }
       ],
       "inputs": [],
-      "x": 308,
-      "y": 308,
+      "x": 1655,
+      "y": 95,
       "perms": []
     },
     {
@@ -108,8 +109,8 @@
           "id": "ff89072e-ada9-4fa6-b55a-9efd7431aa8f"
         }
       ],
-      "x": 559,
-      "y": 216,
+      "x": 1943,
+      "y": 73,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -120,10 +121,10 @@
         "",
         "",
         "",
-        "Czarnkobot, v.0.1.4\nPowered by Oce Industries.\nMój serwer pomocy: https://discord.gg/dakPqvc8T6\nZaproś mnie na serwer: https://bit.ly/Czarnkobot\nGłówny serwer autorów: https://discord.gg/VVdxvSmkvA\nAby zobaczyć listę komend wpisz: cb!help.",
+        "Czarnkobot, v.0.1.5\nPowered by Oce Industries.\nMój serwer pomocy: https://discord.gg/dakPqvc8T6\nZaproś mnie na serwer: https://bit.ly/Czarnkobot\nGłówny serwer autorów: https://discord.gg/VVdxvSmkvA\nAby zobaczyć listę komend wpisz: cb!help.",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
         "",
-        "Czarnkobot, v.0.1.4 by Oce Industries.",
+        "Czarnkobot, v.0.1.5 by Oce Industries.",
         "false",
         "",
         "temp"
@@ -335,13 +336,15 @@
         {
           "label": "true",
           "connections": [
-            "620737d2-0d4b-4055-86f5-3bb03f63cc86"
+            "620737d2-0d4b-4055-86f5-3bb03f63cc86",
+            "2d0b786b-faad-4e13-b122-5fa69891a966"
           ]
         },
         {
           "label": "false",
           "connections": [
-            "8ae6b099-6c1b-41c2-8cf8-4d3dbdb11830"
+            "8ae6b099-6c1b-41c2-8cf8-4d3dbdb11830",
+            "3ff8accd-a6d9-4f9a-b3d5-1d62222b90ce"
           ]
         }
       ],
@@ -372,8 +375,6 @@
       "guid": "4746e070-e24e-4dc8-8969-486ea36a51f6",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -413,7 +414,8 @@
         {
           "label": "responses",
           "connections": [
-            "7987fbd5-43b9-4185-aa13-4222cc6a0e3f"
+            "7987fbd5-43b9-4185-aa13-4222cc6a0e3f",
+            "4d918425-2d8e-428b-804e-3430f684b061"
           ]
         }
       ],
@@ -428,8 +430,6 @@
       "guid": "b4c61f15-6bbe-4a25-a859-9b44d4d2b11e",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -442,8 +442,8 @@
           "id": "7987fbd5-43b9-4185-aa13-4222cc6a0e3f"
         }
       ],
-      "x": 575,
-      "y": 583,
+      "x": 702,
+      "y": 615,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -454,10 +454,10 @@
         "",
         "",
         "",
-        "Czarnkobot, v.0.1.4\n- Poprawiono buga z embedami komendy `cb!8ball`.\n- Dodano aliasy komend takich jak help, meme, changelog (wszystkie możliwości wywołania danej komendy są zapisane po ukośnikach przy jej opisie w karcie pomocy.\n***Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!***\nhttps://discord.gg/dakPqvc8T6",
+        "Czarnkobot, v.0.1.5\n- Drobne poprawki błędów\n- Od teraz bot zareaguje odpowiednią emotką (✅ lub❌) aby pokazać, czy komenda została wykonana poprawnie, czy też może wkradł się jakiś błąd (np. brak pytania przy komendzie `8ball`).\n***Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!***\nhttps://discord.gg/dakPqvc8T6",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
         "",
-        "Czarnkobot, v.0.1.4 by Oce Industries.",
+        "Czarnkobot, v.0.1.5 by Oce Industries.",
         "false",
         "",
         "temp"
@@ -489,13 +489,14 @@
         {
           "label": "responses",
           "connections": [
-            "500b521e-5110-4ac0-82df-612aa69af0e3"
+            "500b521e-5110-4ac0-82df-612aa69af0e3",
+            "46da9fb4-9e3f-4131-a0b4-f8310a33d01e"
           ]
         }
       ],
       "inputs": [],
-      "x": 27,
-      "y": 1033
+      "x": 521,
+      "y": 979
     },
     {
       "type": "response",
@@ -517,8 +518,8 @@
           "id": "500b521e-5110-4ac0-82df-612aa69af0e3"
         }
       ],
-      "x": 452,
-      "y": 988,
+      "x": 1059,
+      "y": 885,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
       "formdata": [
@@ -560,8 +561,8 @@
           "id": "1f73b114-2cbe-4034-8ad9-10fc7e6c8e2e"
         }
       ],
-      "x": 657,
-      "y": 1004,
+      "x": 1252,
+      "y": 879,
       "rtype": "Spreadsheet",
       "rsubtype": "Get Row",
       "formdata": [
@@ -587,8 +588,6 @@
       "guid": "af66e9ea-a659-44d0-869e-fa7ce1b43c54",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -621,24 +620,11 @@
       "valueFields": []
     },
     {
-      "type": "slash",
-      "name": "test",
-      "guid": "6f4eee99-b0ec-4b90-bb67-a3133878176a",
-      "outputs": [],
-      "inputs": [],
-      "x": 1080,
-      "y": 1176,
-      "description": "Testowa komenda",
-      "options": []
-    },
-    {
       "type": "response",
       "name": "help menu_1",
       "guid": "c5b8c652-bbb3-40a1-b4c1-8908c2e7e8d5",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -651,8 +637,8 @@
           "id": "71eee65b-85c5-485d-86e2-5ba786f42193"
         }
       ],
-      "x": 916,
-      "y": 1053,
+      "x": 1478,
+      "y": 925,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -666,7 +652,7 @@
         "",
         "",
         "${tempVars.Response.tresc}",
-        "Czarnkobot, v.0.1.4 by Oce Industries.",
+        "Czarnkobot, v.0.1.5 by Oce Industries.",
         "false",
         "",
         "temp"
@@ -708,8 +694,8 @@
           "id": "a3512f7d-a674-4eeb-819b-702f7e119038"
         }
       ],
-      "x": 1255,
-      "y": 342,
+      "x": 1256,
+      "y": 341,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -723,7 +709,7 @@
         "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *${tempVars.Response.tresc}*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
         "${dbsVars.CommandAuthor.user.avatarURL}",
         "",
-        "Czarnkobot, v.0.1.4 by Oce Industries.",
+        "Czarnkobot, v.0.1.5 by Oce Industries.",
         "false",
         "",
         "temp"
@@ -753,8 +739,6 @@
       "guid": "8ae6b099-6c1b-41c2-8cf8-4d3dbdb11830",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -767,22 +751,22 @@
           "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
         }
       ],
-      "x": 964,
-      "y": 511,
+      "x": 979,
+      "y": 531,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${dbsVars.CommandChannel.id}",
         "FF003F",
+        "⚠️Ostrzeżenie!⚠️",
         "",
         "",
         "",
         "",
+        " Abym odpowiedział, muszę najpierw znać pytanie...",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
         "",
-        "Abym odpowiedział, muszę najpierw znać pytanie...",
-        "",
-        "",
-        "Czarnkobot, v.0.1.4 by Oce Industries.",
+        "Czarnkobot, v.0.1.5 by Oce Industries.",
         "false",
         "",
         "temp"
@@ -815,6 +799,7 @@
         {
           "label": "next response",
           "connections": [
+            "3a84ec66-efce-4a35-88ce-b5bde9a26f3b",
             "37eda463-a170-44f9-af54-61378ffc9294"
           ]
         }
@@ -894,8 +879,8 @@
           "id": "3efe9546-3c3e-4faa-b0aa-276f1ae738d6"
         }
       ],
-      "x": 334,
-      "y": 598,
+      "x": 423,
+      "y": 587,
       "rtype": "Control",
       "rsubtype": "Multiple Input",
       "messageActionRows": []
@@ -908,7 +893,8 @@
         {
           "label": "responses",
           "connections": [
-            "7987fbd5-43b9-4185-aa13-4222cc6a0e3f"
+            "7987fbd5-43b9-4185-aa13-4222cc6a0e3f",
+            "f3be73aa-8c9f-4b57-b64d-cca8b7b7dfc9"
           ]
         }
       ],
@@ -924,13 +910,14 @@
         {
           "label": "responses",
           "connections": [
-            "500b521e-5110-4ac0-82df-612aa69af0e3"
+            "500b521e-5110-4ac0-82df-612aa69af0e3",
+            "46cf6948-ed5f-438f-9970-c9db1d457e20"
           ]
         }
       ],
       "inputs": [],
-      "x": 34,
-      "y": 948
+      "x": 584,
+      "y": 898
     },
     {
       "type": "response",
@@ -955,11 +942,334 @@
           "id": "dad767c0-11a1-4333-8f69-2277a2e9c939"
         }
       ],
-      "x": 274,
-      "y": 928,
+      "x": 852,
+      "y": 864,
       "rtype": "Control",
       "rsubtype": "Multiple Input",
       "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "reakcja",
+      "guid": "3a84ec66-efce-4a35-88ce-b5bde9a26f3b",
+      "reactionFields": [
+        "✅"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✅",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "68078daa-9f94-47b5-9020-f520e4654db8"
+        }
+      ],
+      "x": 784,
+      "y": 177,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "emojiuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reakcja_1",
+      "guid": "2d0b786b-faad-4e13-b122-5fa69891a966",
+      "reactionFields": [
+        "✅"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✅",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
+        }
+      ],
+      "x": 648,
+      "y": 256,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "emojiuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reakcja_2",
+      "guid": "4d918425-2d8e-428b-804e-3430f684b061",
+      "reactionFields": [
+        "✅"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✅",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6c39847b-300e-476f-a8e4-3115b7d98665"
+        }
+      ],
+      "x": 497,
+      "y": 785,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "emojiuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "reakcja_2_1",
+      "guid": "f3be73aa-8c9f-4b57-b64d-cca8b7b7dfc9",
+      "reactionFields": [
+        "✅"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✅",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3efe9546-3c3e-4faa-b0aa-276f1ae738d6"
+        }
+      ],
+      "x": 262,
+      "y": 803,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "emojiuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "reakcja_3",
+      "guid": "46cf6948-ed5f-438f-9970-c9db1d457e20",
+      "reactionFields": [
+        "✅"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✅",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "59dd4913-3d1f-49f4-8a2f-6f75e6c1f073"
+        }
+      ],
+      "x": 1139,
+      "y": 1087,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "emojiuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "reakcja_3_1",
+      "guid": "46da9fb4-9e3f-4131-a0b4-f8310a33d01e",
+      "reactionFields": [
+        "✅"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✅",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "dad767c0-11a1-4333-8f69-2277a2e9c939"
+        }
+      ],
+      "x": 935,
+      "y": 1119,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "emojiuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "reakcja_4",
+      "guid": "80012e7f-f9aa-4d07-83a4-7ad1805e026e",
+      "reactionFields": [
+        "✅"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✅",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ff89072e-ada9-4fa6-b55a-9efd7431aa8f"
+        }
+      ],
+      "x": 1809,
+      "y": 274,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "emojiuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "reakcjaNie",
+      "guid": "3ff8accd-a6d9-4f9a-b3d5-1d62222b90ce",
+      "reactionFields": [
+        "❌"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "❌",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
+        }
+      ],
+      "x": 716,
+      "y": 458,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emojiNie",
+        "emojiNope",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
     }
   ]
 }

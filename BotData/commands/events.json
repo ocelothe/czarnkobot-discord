@@ -39,7 +39,7 @@
           "category": "Bot Action",
           "type": "Set Bot Activity",
           "messageActionRows": [],
-          "activityname": "▸Wersja 0.1.4  | ▸Prefix: cb!",
+          "activityname": "▸Wersja 0.1.5  | ▸Prefix: cb!",
           "activitytype": "WATCHING",
           "streamurl": ""
         }
