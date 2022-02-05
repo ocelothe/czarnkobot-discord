@@ -4,38 +4,75 @@
       "name": "help",
       "actions": [
         {
-          "name": "reakcja",
-          "category": "Reaction",
-          "type": "Add Reaction Listener",
-          "reactionActions": {
-            "✅": []
-          },
-          "messageActionRows": [],
-          "message": "${dbsVars.CommandMessage.id}",
-          "duration": "0",
-          "reactionemoji": "emoji",
-          "reactionuser": "emojiuser",
-          "react": "BOOL_TRUE@@"
-        },
-        {
           "name": "help menu",
           "category": "Message",
           "type": "Send Embed",
+          "fields": [
+            {
+              "name": "▸help/h/pomoc ",
+              "value": "Wyświetla tą kartę.\n",
+              "inline": "false"
+            },
+            {
+              "name": "▸changelog/zmiany",
+              "value": "Changelog danej wersji.",
+              "inline": "false"
+            },
+            {
+              "name": "▸info ",
+              "value": "Informacje dotyczące bota.",
+              "inline": "false"
+            },
+            {
+              "name": "▸8ball",
+              "value": "Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!",
+              "inline": "false"
+            },
+            {
+              "name": "▸meme/mem",
+              "value": "Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***",
+              "inline": "false"
+            },
+            {
+              "name": "▸dice",
+              "value": "Pozwala rzucić kością, np. dice 14 rzuca kością posiadającą 14 ścian. Jeśli nie zostanie wpisana zmienna, bot rzuci zwyczajną kostką sześcienną.",
+              "inline": "false"
+            },
+            {
+              "name": "▸serverinfo/serwerinfo",
+              "value": "Wyświetla informacje o  serwerze.",
+              "inline": "false"
+            }
+          ],
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "Czarnkobot",
+          "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸help/h/pomoc - Wyświetla tą kartę.\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme/mem - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***\n▸changelog/zmiany - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
-          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
-          "image": "",
-          "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
+          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n***WSZYSTKIE KOMENDY:***\n",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
           "timestamp": "false",
           "savetovariable": "",
           "savetovariabletype": "temp"
+        },
+        {
+          "name": "Reaction1",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:checkmark:939632498034495488>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
+          "react": "BOOL_TRUE@@"
         }
       ]
     },
@@ -44,23 +81,26 @@
       "perms": [],
       "actions": [
         {
-          "name": "reakcja_4",
-          "category": "Reaction",
-          "type": "Add Reaction Listener",
-          "reactionActions": {
-            "✅": []
-          },
-          "messageActionRows": [],
-          "message": "${dbsVars.CommandMessage.id}",
-          "duration": "0",
-          "reactionemoji": "emoji",
-          "reactionuser": "emojiuser",
-          "react": "BOOL_TRUE@@"
-        },
-        {
           "name": "Changelog",
           "category": "Message",
           "type": "Send Embed",
+          "fields": [
+            {
+              "name": "▸Mój serwer pomocy: ",
+              "value": "https://discord.gg/dakPqvc8T6",
+              "inline": "false"
+            },
+            {
+              "name": "▸Zaproś mnie na serwer:",
+              "value": "https://bit.ly/Czarnkobot",
+              "inline": "false"
+            },
+            {
+              "name": "▸Główny serwer autorów: ",
+              "value": "https://discord.gg/VVdxvSmkvA",
+              "inline": "false"
+            }
+          ],
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "FF003F",
@@ -69,13 +109,27 @@
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, v.0.1.5\nPowered by Oce Industries.\nMój serwer pomocy: https://discord.gg/dakPqvc8T6\nZaproś mnie na serwer: https://bit.ly/Czarnkobot\nGłówny serwer autorów: https://discord.gg/VVdxvSmkvA\nAby zobaczyć listę komend wpisz: cb!help.",
-          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
-          "image": "",
-          "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
+          "description": "**Czarnkobot, v.0.2.1**\n▸Powered by Oce Industries.\n▸Aby zobaczyć listę komend wpisz: cb!help.",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
           "timestamp": "false",
           "savetovariable": "",
           "savetovariabletype": "temp"
+        },
+        {
+          "name": "Reaction1_2",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:checkmark:939632498034495488>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
+          "react": "BOOL_TRUE@@"
         }
       ]
     },
@@ -104,21 +158,21 @@
               "messageActionRows": [],
               "varname": "randomizer",
               "min": "1",
-              "max": "10",
+              "max": "20",
               "savevartype": "temp"
             },
             {
-              "name": "reakcja_1",
+              "name": "Reaction1_1",
               "category": "Reaction",
               "type": "Add Reaction Listener",
               "reactionActions": {
-                "✅": []
+                "<a:checkmark:939632498034495488>": []
               },
               "messageActionRows": [],
               "message": "${dbsVars.CommandMessage.id}",
               "duration": "0",
-              "reactionemoji": "emoji",
-              "reactionuser": "emojiuser",
+              "reactionemoji": "emoji1",
+              "reactionuser": "react",
               "react": "BOOL_TRUE@@"
             },
             {
@@ -141,7 +195,7 @@
                   "description": "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *${tempVars.Response.tresc}*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
                   "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
                   "image": "",
-                  "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
+                  "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
                   "timestamp": "false",
                   "savetovariable": "",
                   "savetovariabletype": "temp"
@@ -164,31 +218,31 @@
               "messageActionRows": [],
               "channelname": "${dbsVars.CommandChannel.id}",
               "color": "FF003F",
-              "title": "⚠️Ostrzeżenie!⚠️",
+              "title": "Ostrzeżenie!",
               "url": "",
               "authorname": "",
               "authorimageurl": "",
               "authorlink": "",
-              "description": " Abym odpowiedział, muszę najpierw znać pytanie...",
+              "description": "<:exclamationWarning:939643983460712519> Abym odpowiedział, muszę najpierw znać pytanie...",
               "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
               "image": "",
-              "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
               "timestamp": "false",
               "savetovariable": "",
               "savetovariabletype": "temp"
             },
             {
-              "name": "reakcjaNie",
+              "name": "reactionNie",
               "category": "Reaction",
               "type": "Add Reaction Listener",
               "reactionActions": {
-                "❌": []
+                "<:crossmark:939640618760679464>": []
               },
               "messageActionRows": [],
               "message": "${dbsVars.CommandMessage.id}",
               "duration": "0",
-              "reactionemoji": "emojiNie",
-              "reactionuser": "emojiNope",
+              "reactionemoji": "reactionNo",
+              "reactionuser": "noReact",
               "react": "BOOL_TRUE@@"
             }
           ],
@@ -203,23 +257,30 @@
       "perms": [],
       "actions": [
         {
-          "name": "reakcja_2",
+          "name": "Reaction1_1_1",
           "category": "Reaction",
           "type": "Add Reaction Listener",
           "reactionActions": {
-            "✅": []
+            "<a:checkmark:939632498034495488>": []
           },
           "messageActionRows": [],
           "message": "${dbsVars.CommandMessage.id}",
           "duration": "0",
-          "reactionemoji": "emoji",
-          "reactionuser": "emojiuser",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
           "react": "BOOL_TRUE@@"
         },
         {
           "name": "Changelog_1",
           "category": "Message",
           "type": "Send Embed",
+          "fields": [
+            {
+              "name": "Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!",
+              "value": "https://discord.gg/dakPqvc8T6",
+              "inline": "false"
+            }
+          ],
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "46FF00",
@@ -228,10 +289,10 @@
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, v.0.1.5\n- Drobne poprawki błędów\n- Od teraz bot zareaguje odpowiednią emotką (✅ lub❌) aby pokazać, czy komenda została wykonana poprawnie, czy też może wkradł się jakiś błąd (np. brak pytania przy komendzie `8ball`).\n***Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!***\nhttps://discord.gg/dakPqvc8T6",
+          "description": "Czarnkobot, v.0.2.1\n- Dodanie kilku memów do randomizera memów,\n- Dodanie kilku odpowiedzi do komendy `8ball`,\n- Dodanie komendy `dice`, która pozwala rzucić kością,\n- Upiększenie listy komend na `help`,\n- Dodanie kilku custom emotek do odpowiedzi bota,\n- Dodanie komendy `serwerinfo/serverinfo` która pokazuje informacje o serwerze,\n- W footerze embeda można znaleźć informację o tym, kto wywołał daną komendę,\n- Dodano baner informacyjny do komend `help`, `changelog`, `info`,\n- W przypadku komendy `meme` bot poda w tytule embeda nazwę użytkownika który wpisał komendę.\n",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
-          "image": "",
-          "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
           "timestamp": "false",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -242,17 +303,17 @@
       "name": "meme",
       "actions": [
         {
-          "name": "reakcja_3_1",
+          "name": "Reaction1_3",
           "category": "Reaction",
           "type": "Add Reaction Listener",
           "reactionActions": {
-            "✅": []
+            "<a:checkmark:939632498034495488>": []
           },
           "messageActionRows": [],
           "message": "${dbsVars.CommandMessage.id}",
           "duration": "0",
-          "reactionemoji": "emoji",
-          "reactionuser": "emojiuser",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
           "react": "BOOL_TRUE@@"
         },
         {
@@ -262,7 +323,7 @@
           "messageActionRows": [],
           "varname": "randomizer",
           "min": "1",
-          "max": "24",
+          "max": "33",
           "savevartype": "temp"
         },
         {
@@ -277,16 +338,16 @@
               "messageActionRows": [],
               "channelname": "${dbsVars.CommandChannel.id}",
               "color": "70FFC9",
-              "title": "Oto twój mem!",
+              "title": "Oto twój mem, ${dbsVars.CommandAuthor.displayName}!",
               "url": "",
-              "authorname": "Czarnkobot",
+              "authorname": "",
               "authorimageurl": "",
               "authorlink": "",
               "description": "",
               "thumbnail": "",
               "image": "${tempVars.Response.tresc}",
-              "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
-              "timestamp": "false",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+              "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
             }
@@ -305,38 +366,75 @@
       "name": "h",
       "actions": [
         {
-          "name": "reakcja",
-          "category": "Reaction",
-          "type": "Add Reaction Listener",
-          "reactionActions": {
-            "✅": []
-          },
-          "messageActionRows": [],
-          "message": "${dbsVars.CommandMessage.id}",
-          "duration": "0",
-          "reactionemoji": "emoji",
-          "reactionuser": "emojiuser",
-          "react": "BOOL_TRUE@@"
-        },
-        {
           "name": "help menu",
           "category": "Message",
           "type": "Send Embed",
+          "fields": [
+            {
+              "name": "▸help/h/pomoc ",
+              "value": "Wyświetla tą kartę.\n",
+              "inline": "false"
+            },
+            {
+              "name": "▸changelog/zmiany",
+              "value": "Changelog danej wersji.",
+              "inline": "false"
+            },
+            {
+              "name": "▸info ",
+              "value": "Informacje dotyczące bota.",
+              "inline": "false"
+            },
+            {
+              "name": "▸8ball",
+              "value": "Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!",
+              "inline": "false"
+            },
+            {
+              "name": "▸meme/mem",
+              "value": "Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***",
+              "inline": "false"
+            },
+            {
+              "name": "▸dice",
+              "value": "Pozwala rzucić kością, np. dice 14 rzuca kością posiadającą 14 ścian. Jeśli nie zostanie wpisana zmienna, bot rzuci zwyczajną kostką sześcienną.",
+              "inline": "false"
+            },
+            {
+              "name": "▸serverinfo/serwerinfo",
+              "value": "Wyświetla informacje o  serwerze.",
+              "inline": "false"
+            }
+          ],
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "Czarnkobot",
+          "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸help/h/pomoc - Wyświetla tą kartę.\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme/mem - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***\n▸changelog/zmiany - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
-          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
-          "image": "",
-          "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
+          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n***WSZYSTKIE KOMENDY:***\n",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
           "timestamp": "false",
           "savetovariable": "",
           "savetovariabletype": "temp"
+        },
+        {
+          "name": "Reaction1",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:checkmark:939632498034495488>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
+          "react": "BOOL_TRUE@@"
         }
       ]
     },
@@ -344,38 +442,75 @@
       "name": "pomoc",
       "actions": [
         {
-          "name": "reakcja",
-          "category": "Reaction",
-          "type": "Add Reaction Listener",
-          "reactionActions": {
-            "✅": []
-          },
-          "messageActionRows": [],
-          "message": "${dbsVars.CommandMessage.id}",
-          "duration": "0",
-          "reactionemoji": "emoji",
-          "reactionuser": "emojiuser",
-          "react": "BOOL_TRUE@@"
-        },
-        {
           "name": "help menu",
           "category": "Message",
           "type": "Send Embed",
+          "fields": [
+            {
+              "name": "▸help/h/pomoc ",
+              "value": "Wyświetla tą kartę.\n",
+              "inline": "false"
+            },
+            {
+              "name": "▸changelog/zmiany",
+              "value": "Changelog danej wersji.",
+              "inline": "false"
+            },
+            {
+              "name": "▸info ",
+              "value": "Informacje dotyczące bota.",
+              "inline": "false"
+            },
+            {
+              "name": "▸8ball",
+              "value": "Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!",
+              "inline": "false"
+            },
+            {
+              "name": "▸meme/mem",
+              "value": "Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***",
+              "inline": "false"
+            },
+            {
+              "name": "▸dice",
+              "value": "Pozwala rzucić kością, np. dice 14 rzuca kością posiadającą 14 ścian. Jeśli nie zostanie wpisana zmienna, bot rzuci zwyczajną kostką sześcienną.",
+              "inline": "false"
+            },
+            {
+              "name": "▸serverinfo/serwerinfo",
+              "value": "Wyświetla informacje o  serwerze.",
+              "inline": "false"
+            }
+          ],
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "Czarnkobot",
+          "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\n***MOJE KOMENDY***:\n▸help/h/pomoc - Wyświetla tą kartę.\n▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!\n▸meme/mem - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***\n▸changelog/zmiany - Changelog danej wersji.\n▸info - Informacje dotyczące bota.\nBot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.",
-          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c25381e9.png",
-          "image": "",
-          "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
+          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n***WSZYSTKIE KOMENDY:***\n",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
           "timestamp": "false",
           "savetovariable": "",
           "savetovariabletype": "temp"
+        },
+        {
+          "name": "Reaction1",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:checkmark:939632498034495488>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
+          "react": "BOOL_TRUE@@"
         }
       ]
     },
@@ -383,23 +518,30 @@
       "name": "zmiany",
       "actions": [
         {
-          "name": "reakcja_2_1",
+          "name": "Reaction1_1_1_1",
           "category": "Reaction",
           "type": "Add Reaction Listener",
           "reactionActions": {
-            "✅": []
+            "<a:checkmark:939632498034495488>": []
           },
           "messageActionRows": [],
           "message": "${dbsVars.CommandMessage.id}",
           "duration": "0",
-          "reactionemoji": "emoji",
-          "reactionuser": "emojiuser",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
           "react": "BOOL_TRUE@@"
         },
         {
           "name": "Changelog_1",
           "category": "Message",
           "type": "Send Embed",
+          "fields": [
+            {
+              "name": "Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!",
+              "value": "https://discord.gg/dakPqvc8T6",
+              "inline": "false"
+            }
+          ],
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "46FF00",
@@ -408,10 +550,10 @@
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, v.0.1.5\n- Drobne poprawki błędów\n- Od teraz bot zareaguje odpowiednią emotką (✅ lub❌) aby pokazać, czy komenda została wykonana poprawnie, czy też może wkradł się jakiś błąd (np. brak pytania przy komendzie `8ball`).\n***Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!***\nhttps://discord.gg/dakPqvc8T6",
+          "description": "Czarnkobot, v.0.2.1\n- Dodanie kilku memów do randomizera memów,\n- Dodanie kilku odpowiedzi do komendy `8ball`,\n- Dodanie komendy `dice`, która pozwala rzucić kością,\n- Upiększenie listy komend na `help`,\n- Dodanie kilku custom emotek do odpowiedzi bota,\n- Dodanie komendy `serwerinfo/serverinfo` która pokazuje informacje o serwerze,\n- W footerze embeda można znaleźć informację o tym, kto wywołał daną komendę,\n- Dodano baner informacyjny do komend `help`, `changelog`, `info`,\n- W przypadku komendy `meme` bot poda w tytule embeda nazwę użytkownika który wpisał komendę.\n",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
-          "image": "",
-          "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
           "timestamp": "false",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -422,17 +564,17 @@
       "name": "mem",
       "actions": [
         {
-          "name": "reakcja_3",
+          "name": "Reaction1_3_1",
           "category": "Reaction",
           "type": "Add Reaction Listener",
           "reactionActions": {
-            "✅": []
+            "<a:checkmark:939632498034495488>": []
           },
           "messageActionRows": [],
           "message": "${dbsVars.CommandMessage.id}",
           "duration": "0",
-          "reactionemoji": "emoji",
-          "reactionuser": "emojiuser",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
           "react": "BOOL_TRUE@@"
         },
         {
@@ -442,7 +584,7 @@
           "messageActionRows": [],
           "varname": "randomizer",
           "min": "1",
-          "max": "24",
+          "max": "33",
           "savevartype": "temp"
         },
         {
@@ -457,16 +599,16 @@
               "messageActionRows": [],
               "channelname": "${dbsVars.CommandChannel.id}",
               "color": "70FFC9",
-              "title": "Oto twój mem!",
+              "title": "Oto twój mem, ${dbsVars.CommandAuthor.displayName}!",
               "url": "",
-              "authorname": "Czarnkobot",
+              "authorname": "",
               "authorimageurl": "",
               "authorlink": "",
               "description": "",
               "thumbnail": "",
               "image": "${tempVars.Response.tresc}",
-              "footer": "Czarnkobot, v.0.1.5 by Oce Industries.",
-              "timestamp": "false",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+              "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
             }
@@ -478,6 +620,286 @@
           "colval": "${tempVars.randomizer}",
           "rowvariable": "Response",
           "savevartype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "dice",
+      "actions": [
+        {
+          "name": "liczbaoczek",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "liczbaoczek",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "Reaction1_2_1",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:checkmark:939632498034495488>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
+          "react": "BOOL_TRUE@@"
+        },
+        {
+          "name": "czypodanoliczbę",
+          "category": "Variable",
+          "type": "Check If Variable Exists",
+          "trueActions": [
+            {
+              "name": "dice1",
+              "category": "Variable",
+              "type": "Generate Random Number",
+              "messageActionRows": [],
+              "varname": "dice1",
+              "min": "1",
+              "max": "${tempVars.liczbaoczek}",
+              "savevartype": "temp"
+            },
+            {
+              "name": "Changelog_3",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "A642FF",
+              "title": "🎲Rzut kostką!🎲",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "<:customDice:939311935185371236> ▸Rzuciłeś kostką d${tempVars.liczbaoczek}, wypadła liczba ${tempVars.dice1}.",
+              "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+              "image": "",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "rng2",
+              "category": "Variable",
+              "type": "Generate Random Number",
+              "messageActionRows": [],
+              "varname": "dice2",
+              "min": "1",
+              "max": "6",
+              "savevartype": "temp"
+            },
+            {
+              "name": "Changelog_3_1",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "A642FF",
+              "title": "🎲Rzut kostką!🎲",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "<:dice6:939311935009214535> ▸ Rzuciłeś kostką d6, wypadła liczba ${tempVars.dice2}.",
+              "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+              "image": "",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "messageActionRows": [],
+          "varname": "liczbaoczek",
+          "savevartype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "kostka",
+      "actions": [
+        {
+          "name": "liczbaoczek",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "liczbaoczek",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "Reaction1_2_1",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:checkmark:939632498034495488>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
+          "react": "BOOL_TRUE@@"
+        },
+        {
+          "name": "czypodanoliczbę",
+          "category": "Variable",
+          "type": "Check If Variable Exists",
+          "trueActions": [
+            {
+              "name": "dice1",
+              "category": "Variable",
+              "type": "Generate Random Number",
+              "messageActionRows": [],
+              "varname": "dice1",
+              "min": "1",
+              "max": "${tempVars.liczbaoczek}",
+              "savevartype": "temp"
+            },
+            {
+              "name": "Changelog_3",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "A642FF",
+              "title": "🎲Rzut kostką!🎲",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "<:customDice:939311935185371236> ▸Rzuciłeś kostką d${tempVars.liczbaoczek}, wypadła liczba ${tempVars.dice1}.",
+              "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+              "image": "",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "rng2",
+              "category": "Variable",
+              "type": "Generate Random Number",
+              "messageActionRows": [],
+              "varname": "dice2",
+              "min": "1",
+              "max": "6",
+              "savevartype": "temp"
+            },
+            {
+              "name": "Changelog_3_1",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "A642FF",
+              "title": "🎲Rzut kostką!🎲",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "<:dice6:939311935009214535> ▸ Rzuciłeś kostką d6, wypadła liczba ${tempVars.dice2}.",
+              "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+              "image": "",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "messageActionRows": [],
+          "varname": "liczbaoczek",
+          "savevartype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "serwerinfo",
+      "actions": [
+        {
+          "name": "Reaction1_2_1_1",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:checkmark:939632498034495488>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
+          "react": "BOOL_TRUE@@"
+        },
+        {
+          "name": "Changelog_3_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "635EFF",
+          "title": "Informacje o serwerze.",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "<:servers:939317620602200084> Nazwa serwera: ${dbsVars.guild.name}.\n<:member:939316252088889365> Ilość członków: ${dbsVars.guild.memberCount}\n<:identify:939317620467982457> ID Serwera: ${dbsVars.guild.id}\n",
+          "thumbnail": "${dbsVars.guild.iconURL}",
+          "image": "",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "serverinfo",
+      "actions": [
+        {
+          "name": "Reaction1_2_1_1_1",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:checkmark:939632498034495488>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji1",
+          "reactionuser": "react",
+          "react": "BOOL_TRUE@@"
+        },
+        {
+          "name": "Changelog_3_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "635EFF",
+          "title": "Informacje o serwerze.",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "<:servers:939317620602200084> Nazwa serwera: ${dbsVars.guild.name}.\n<:member:939316252088889365> Ilość członków: ${dbsVars.guild.memberCount}\n<:identify:939317620467982457> ID Serwera: ${dbsVars.guild.id}\n",
+          "thumbnail": "${dbsVars.guild.iconURL}",
+          "image": "",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
         }
       ]
     }

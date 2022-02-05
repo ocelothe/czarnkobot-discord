@@ -1,0 +1,8 @@
+Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.
+***MOJE KOMENDY***:
+▸help/h/pomoc - Wyświetla tą kartę.
+▸8ball - Wysyła randomową odpowiedź na twoje pytanie. Pytaj o co chcesz!
+▸meme/mem - Wysyła losowego mema z naszym ulubionym ministrem. ***UWAGA, TA KOMENDA LUBI SIĘ BUGOWAĆ, CZASEM TRZEBA WPISAĆ JĄ DWA LUB WIĘCEJ RAZY!***
+▸changelog/zmiany - Changelog danej wersji.
+▸info - Informacje dotyczące bota.
+Bot ten jest stworzony czysto dla zabawy, a nie po to by kogoś obrazić.

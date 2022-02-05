@@ -79,7 +79,8 @@
         {
           "label": "responses",
           "connections": [
-            "ef72bb81-ca47-4c02-9841-2e44383f1395"
+            "ef72bb81-ca47-4c02-9841-2e44383f1395",
+            "59a1e7eb-5e0f-4011-a16c-59149ac979fa"
           ]
         }
       ],
@@ -556,12 +557,12 @@
           "id": "0101bc23-2003-4f05-ab69-bc9ecb4f067e"
         }
       ],
-      "x": 317,
-      "y": 466,
+      "x": 474,
+      "y": 442,
       "rtype": "Bot Action",
       "rsubtype": "Set Bot Activity",
       "formdata": [
-        "▸Wersja 0.1.5  | ▸Prefix: cb!",
+        "▸Wersja 0.2.1  | ▸Prefix: cb!",
         "WATCHING",
         ""
       ],
@@ -569,6 +570,37 @@
         "activityname",
         "activitytype",
         "streamurl"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "bot_status",
+      "guid": "59a1e7eb-5e0f-4011-a16c-59149ac979fa",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0101bc23-2003-4f05-ab69-bc9ecb4f067e"
+        }
+      ],
+      "x": 304,
+      "y": 533,
+      "rtype": "Bot Action",
+      "rsubtype": "Set Bot Status",
+      "formdata": [
+        "idle"
+      ],
+      "formnames": [
+        "presencestatus"
       ],
       "messageActionRows": [],
       "valueFields": []

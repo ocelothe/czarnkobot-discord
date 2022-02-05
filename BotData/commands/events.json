@@ -39,9 +39,16 @@
           "category": "Bot Action",
           "type": "Set Bot Activity",
           "messageActionRows": [],
-          "activityname": "▸Wersja 0.1.5  | ▸Prefix: cb!",
+          "activityname": "▸Wersja 0.2.1  | ▸Prefix: cb!",
           "activitytype": "WATCHING",
           "streamurl": ""
+        },
+        {
+          "name": "bot_status",
+          "category": "Bot Action",
+          "type": "Set Bot Status",
+          "messageActionRows": [],
+          "presencestatus": "idle"
         }
       ],
       "var": {}
