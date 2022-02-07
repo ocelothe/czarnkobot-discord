@@ -562,9 +562,9 @@
       "rtype": "Bot Action",
       "rsubtype": "Set Bot Activity",
       "formdata": [
-        "▸Wersja 0.2.1  | ▸Prefix: cb!",
-        "WATCHING",
-        ""
+        "▸Wersja 0.2.2  | ▸Prefix: cb!",
+        "STREAMING",
+        "https://www.youtube.com/watch?v=pTQuAzcV6S4"
       ],
       "formnames": [
         "activityname",
@@ -592,8 +592,8 @@
           "id": "0101bc23-2003-4f05-ab69-bc9ecb4f067e"
         }
       ],
-      "x": 304,
-      "y": 533,
+      "x": 484,
+      "y": 561,
       "rtype": "Bot Action",
       "rsubtype": "Set Bot Status",
       "formdata": [
