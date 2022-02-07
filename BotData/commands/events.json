@@ -39,7 +39,7 @@
           "category": "Bot Action",
           "type": "Set Bot Activity",
           "messageActionRows": [],
-          "activityname": "▸Wersja 0.2.2  | ▸Prefix: cb!",
+          "activityname": "▸Wersja 0.2.1  | ▸Prefix: cb!",
           "activitytype": "STREAMING",
           "streamurl": "https://www.youtube.com/watch?v=pTQuAzcV6S4"
         },

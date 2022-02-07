@@ -562,7 +562,7 @@
       "rtype": "Bot Action",
       "rsubtype": "Set Bot Activity",
       "formdata": [
-        "▸Wersja 0.2.2  | ▸Prefix: cb!",
+        "▸Wersja 0.2.1  | ▸Prefix: cb!",
         "STREAMING",
         "https://www.youtube.com/watch?v=pTQuAzcV6S4"
       ],
