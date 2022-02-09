@@ -11,7 +11,239 @@
     {
       "name": "Any Message",
       "perms": [],
-      "actions": [],
+      "actions": [
+        {
+          "name": "string1",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "grzmocenie",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Skup się na nauce, na seks przyjdzie czas.",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "grzmocenie"
+        },
+        {
+          "name": "check",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "odpowiedź",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Do widzenia.",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "ide sobie"
+        },
+        {
+          "name": "grzmocenie2",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "grzmocenie_1",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Skup się na nauce, na seks przyjdzie czas.",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "Grzmocenie"
+        },
+        {
+          "name": "wódeczka1",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "odpowiedź_1",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Polska wódeczka jest najlepsza i dobra.",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "wódeczka"
+        },
+        {
+          "name": "daj zaproszenie",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "zapro1",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Proszę bardzo: https://discord.gg/yMVaJkkaC4",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "ministrze daj zaproszenie na memiarską"
+        },
+        {
+          "name": "zapro2",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "zapro1_1",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Proszę bardzo: https://discord.gg/VVdxvSmkvA",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "ministrze daj zaproszenie na harnasiową"
+        },
+        {
+          "name": "wyzwisko 1",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "w1",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Co ja, jak ja, ale co ty się ode mnie odczep lepiej.",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "przemo ty kurwo"
+        },
+        {
+          "name": "liż",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "l2",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Sam se poliż, co ja jestem od lizania jaj?",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "przemo liż mi jaja"
+        },
+        {
+          "name": "w2",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "w22",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Masz wielką szansę poczuć moją szablę w swojej dupie.",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "przemo ty chuju"
+        },
+        {
+          "name": "prawda",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "pr2",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "No a co myślałeś?",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "prawda przemo?"
+        },
+        {
+          "name": "o2",
+          "category": "Variable",
+          "type": "Check If String Contains",
+          "trueActions": [
+            {
+              "name": "o_2",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${tempVars.anymessage.channel.id}",
+              "messagetext": "Że jestem kanalia, menda, alkoholik i wrzód na zdrowym ciele narodu pracującego miast i wsi. A sam nie lepszy.",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "stringtocheck": "${tempVars.anymessage.content}",
+          "valuetocheck": "co suski myśli o tobie?"
+        }
+      ],
       "var": {}
     },
     {
@@ -39,16 +271,9 @@
           "category": "Bot Action",
           "type": "Set Bot Activity",
           "messageActionRows": [],
-          "activityname": "▸Wersja 0.2.1  | ▸Prefix: cb!",
+          "activityname": "▸Wersja 0.3.1  | ▸Prefix: cb!",
           "activitytype": "STREAMING",
-          "streamurl": "https://www.youtube.com/watch?v=pTQuAzcV6S4"
-        },
-        {
-          "name": "bot_status",
-          "category": "Bot Action",
-          "type": "Set Bot Status",
-          "messageActionRows": [],
-          "presencestatus": "idle"
+          "streamurl": "https://www.youtube.com/watch?v=HR5zpFs7YpY"
         }
       ],
       "var": {}
@@ -232,7 +457,101 @@
     {
       "name": "Button Interaction",
       "perms": [],
-      "actions": [],
+      "actions": [
+        {
+          "name": "btnInteraction",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "infoButton": [
+              {
+                "name": "infoButton",
+                "category": "Message",
+                "type": "Send Embed",
+                "fields": [
+                  {
+                    "name": "▸Mój serwer pomocy:",
+                    "value": "https://discord.gg/dakPqvc8T6",
+                    "inline": "false"
+                  },
+                  {
+                    "name": "▸Zaproś mnie na serwer:",
+                    "value": "https://bit.ly/Czarnkobot",
+                    "inline": "false"
+                  },
+                  {
+                    "name": "▸Główny serwer autorów:",
+                    "value": "https://discord.gg/VVdxvSmkvA",
+                    "inline": "false"
+                  }
+                ],
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "color": "FF003F",
+                "title": "Info",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "**Czarnkobot, v.0.3.1**\n▸Powered by Oce Industries.\n▸Aby zobaczyć listę komend wpisz: cb!help.",
+                "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+                "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
+                "footer": "Komenda wywołana przez: ${tempVars.buttoninteraction.member.displayName}  | Czarnkobot, v.0.3.1 by Oce Industries.",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "reply1_1",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Oto podstawowe informacje o bocie."
+              }
+            ],
+            "cglogButton": [
+              {
+                "name": "infoButton_1",
+                "category": "Message",
+                "type": "Send Embed",
+                "fields": [
+                  {
+                    "name": "Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!",
+                    "value": "https://discord.gg/dakPqvc8T6",
+                    "inline": "false"
+                  }
+                ],
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "color": "46FF00",
+                "title": "Changelog",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Czarnkobot, v.0.3.1\n- Dodanie autorespondera, wyrażenia na które odpowiada są tutaj: https://pastebin.com/LMn8UMs5;\n- Dodanie przycisków pod embedem komendy `help`, dzięki temu można sobie łatwo odpalić changelog i informacje bez wysyłania komendy;\n- Od teraz trzeba koniecznie wpisać `?` zadając pytanie w komendzie `8ball`, inaczej wyskoczy błąd;\n- Kilka nowych memów w randomizerze (głównie tych z kategorii \"nightmare petrol\").",
+                "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+                "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
+                "footer": "Komenda wywołana przez: ${tempVars.buttoninteraction.member.displayName}  | Czarnkobot, v.0.3.1 by Oce Industries.",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "reply1",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Oto changelog najnowszej wersji."
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        }
+      ],
       "var": {
         "channel": ""
       }

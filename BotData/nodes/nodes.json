@@ -13,7 +13,7 @@
         }
       ],
       "inputs": [],
-      "x": 72,
+      "x": 71,
       "y": 77,
       "perms": []
     },
@@ -71,7 +71,7 @@
           "id": "68078daa-9f94-47b5-9020-f520e4654db8"
         }
       ],
-      "x": 438,
+      "x": 437,
       "y": 63,
       "rtype": "Message",
       "rsubtype": "Send Embed",
@@ -85,9 +85,9 @@
         "",
         "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n***WSZYSTKIE KOMENDY:***\n",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
-        "false",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
         "",
         "temp"
       ],
@@ -107,7 +107,29 @@
         "saveToVariable",
         "saveToVariableType"
       ],
-      "messageActionRows": [],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "Info o bocie",
+              "customid": "infoButton",
+              "style": "SECONDARY",
+              "emoji": "",
+              "URL": "",
+              "ephemeral": false
+            },
+            {
+              "label": "Changelog",
+              "customid": "cglogButton",
+              "style": "SUCCESS",
+              "emoji": "",
+              "URL": "",
+              "ephemeral": false
+            }
+          ]
+        }
+      ],
       "valueFields": []
     },
     {
@@ -119,13 +141,13 @@
           "label": "responses",
           "connections": [
             "19ffa8bf-2dfa-45e6-b20f-ee5113be1df4",
-            "8bf38516-3cba-4342-95d2-f92312af1e84"
+            "13f4fc77-3b02-45b0-a869-1943114f2943"
           ]
         }
       ],
       "inputs": [],
       "x": 1655,
-      "y": 95,
+      "y": 94,
       "perms": []
     },
     {
@@ -162,8 +184,8 @@
           "id": "ff89072e-ada9-4fa6-b55a-9efd7431aa8f"
         }
       ],
-      "x": 1940,
-      "y": 71,
+      "x": 1836,
+      "y": 58,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -174,11 +196,11 @@
         "",
         "",
         "",
-        "**Czarnkobot, v.0.2.1**\n▸Powered by Oce Industries.\n▸Aby zobaczyć listę komend wpisz: cb!help.",
+        "**Czarnkobot, v.0.3.1**\n▸Powered by Oce Industries.\n▸Aby zobaczyć listę komend wpisz: cb!help.",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
-        "false",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
         "",
         "temp"
       ],
@@ -214,8 +236,8 @@
         }
       ],
       "inputs": [],
-      "x": 145,
-      "y": 354,
+      "x": 199,
+      "y": 358,
       "perms": []
     },
     {
@@ -235,11 +257,11 @@
       "inputs": [
         {
           "label": "trigger",
-          "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
+          "id": "069f2b65-70d0-4668-982f-7e8904058f67"
         }
       ],
-      "x": 817,
-      "y": 361,
+      "x": 1094,
+      "y": 269,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
       "formdata": [
@@ -281,8 +303,8 @@
           "id": "620737d2-0d4b-4055-86f5-3bb03f63cc86"
         }
       ],
-      "x": 999,
-      "y": 323,
+      "x": 1293,
+      "y": 268,
       "rtype": "Spreadsheet",
       "rsubtype": "Get Row",
       "formdata": [
@@ -298,43 +320,6 @@
         "colval",
         "rowvariable",
         "saveVarType"
-      ],
-      "messageActionRows": [],
-      "valueFields": []
-    },
-    {
-      "type": "response",
-      "name": "responder",
-      "guid": "ed45354d-5fab-487f-80de-a686d71059d1",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "a3512f7d-a674-4eeb-819b-702f7e119038"
-        }
-      ],
-      "x": 1313,
-      "y": 165,
-      "rtype": "Message",
-      "rsubtype": "Send Message",
-      "formdata": [
-        "${dbsVars.CommandChannel.id}",
-        "${tempVars.Response.tresc}",
-        "",
-        "temp"
-      ],
-      "formnames": [
-        "channelName",
-        "messageText",
-        "saveToVariable",
-        "saveToVariableType"
       ],
       "messageActionRows": [],
       "valueFields": []
@@ -361,8 +346,8 @@
           "id": "7b4bc800-a8d8-40b2-b056-d5bdd40e0754"
         }
       ],
-      "x": 302,
-      "y": 340,
+      "x": 365,
+      "y": 335,
       "rtype": "Variable",
       "rsubtype": "Store Value in Variable",
       "formdata": [
@@ -390,15 +375,14 @@
         {
           "label": "true",
           "connections": [
-            "620737d2-0d4b-4055-86f5-3bb03f63cc86",
-            "92654ac7-42ec-424e-9dbb-122abaa1d3d0"
+            "069f2b65-70d0-4668-982f-7e8904058f67"
           ]
         },
         {
           "label": "false",
           "connections": [
             "8ae6b099-6c1b-41c2-8cf8-4d3dbdb11830",
-            "20256fe6-6194-472e-92c6-dd650f87af84"
+            "f7194c4b-e4da-41cb-8e2a-d21dae259ad0"
           ]
         }
       ],
@@ -408,8 +392,8 @@
           "id": "fe61a642-808c-4328-959a-f729fbb88d19"
         }
       ],
-      "x": 471,
-      "y": 313,
+      "x": 526,
+      "y": 311,
       "rtype": "Variable",
       "rsubtype": "Check If Variable Exists",
       "formdata": [
@@ -424,43 +408,6 @@
       "valueFields": []
     },
     {
-      "type": "response",
-      "name": "error",
-      "guid": "4746e070-e24e-4dc8-8969-486ea36a51f6",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
-        }
-      ],
-      "x": 1104,
-      "y": 146,
-      "rtype": "Message",
-      "rsubtype": "Send Message",
-      "formdata": [
-        "${dbsVars.CommandChannel.id}",
-        "Abym odpowiedział, muszę najpierw znać pytanie...",
-        "",
-        "temp"
-      ],
-      "formnames": [
-        "channelName",
-        "messageText",
-        "saveToVariable",
-        "saveToVariableType"
-      ],
-      "messageActionRows": [],
-      "valueFields": []
-    },
-    {
       "type": "command",
       "name": "changelog",
       "guid": "6c39847b-300e-476f-a8e4-3115b7d98665",
@@ -469,13 +416,13 @@
           "label": "responses",
           "connections": [
             "7987fbd5-43b9-4185-aa13-4222cc6a0e3f",
-            "b9f22d8c-dc18-4336-a63c-d0a7f84c3a2b"
+            "ddc841d6-c06c-4fb1-9a12-f15acf6382a0"
           ]
         }
       ],
       "inputs": [],
-      "x": 175,
-      "y": 583,
+      "x": 56,
+      "y": 682,
       "perms": []
     },
     {
@@ -502,8 +449,8 @@
           "id": "7987fbd5-43b9-4185-aa13-4222cc6a0e3f"
         }
       ],
-      "x": 605,
-      "y": 607,
+      "x": 406,
+      "y": 622,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -514,11 +461,11 @@
         "",
         "",
         "",
-        "Czarnkobot, v.0.2.1\n- Dodanie kilku memów do randomizera memów,\n- Dodanie kilku odpowiedzi do komendy `8ball`,\n- Dodanie komendy `dice`, która pozwala rzucić kością,\n- Upiększenie listy komend na `help`,\n- Dodanie kilku custom emotek do odpowiedzi bota,\n- Dodanie komendy `serwerinfo/serverinfo` która pokazuje informacje o serwerze,\n- W footerze embeda można znaleźć informację o tym, kto wywołał daną komendę,\n- Dodano baner informacyjny do komend `help`, `changelog`, `info`,\n- W przypadku komendy `meme` bot poda w tytule embeda nazwę użytkownika który wpisał komendę.\n",
+        "Czarnkobot, v.0.3.1\n- Dodanie autorespondera, wyrażenia na które odpowiada są tutaj: https://pastebin.com/LMn8UMs5;\n- Dodanie przycisków pod embedem komendy `help`, dzięki temu można sobie łatwo odpalić changelog i informacje bez wysyłania komendy;\n- Od teraz trzeba koniecznie wpisać `?` zadając pytanie w komendzie `8ball`, inaczej wyskoczy błąd;\n- Kilka nowych memów w randomizerze (głównie tych z kategorii \"nightmare petrol\").",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/c6eeeda6.png",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
-        "false",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
         "",
         "temp"
       ],
@@ -550,7 +497,7 @@
           "label": "responses",
           "connections": [
             "500b521e-5110-4ac0-82df-612aa69af0e3",
-            "ce69954d-61d9-4045-865f-5811f0969dfc"
+            "9d4a8b53-cf24-4a53-82bc-dcc1d591e26e"
           ]
         }
       ],
@@ -586,7 +533,7 @@
       "formdata": [
         "randomizer",
         "1",
-        "33",
+        "37",
         "temp"
       ],
       "formnames": [
@@ -623,7 +570,7 @@
         }
       ],
       "x": 1173,
-      "y": 871,
+      "y": 876,
       "rtype": "Spreadsheet",
       "rsubtype": "Get Row",
       "formdata": [
@@ -661,8 +608,8 @@
           "id": "71eee65b-85c5-485d-86e2-5ba786f42193"
         }
       ],
-      "x": 1056,
-      "y": 674,
+      "x": -3,
+      "y": 953,
       "rtype": "Message",
       "rsubtype": "Send Message",
       "formdata": [
@@ -699,7 +646,7 @@
         }
       ],
       "x": 1330,
-      "y": 894,
+      "y": 892,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -713,7 +660,7 @@
         "",
         "",
         "${tempVars.Response.tresc}",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -755,8 +702,8 @@
           "id": "a3512f7d-a674-4eeb-819b-702f7e119038"
         }
       ],
-      "x": 1159,
-      "y": 337,
+      "x": 1477,
+      "y": 275,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -770,8 +717,8 @@
         "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *${tempVars.Response.tresc}*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
         "${dbsVars.CommandAuthor.user.avatarURL}",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
-        "false",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
         "",
         "temp"
       ],
@@ -812,7 +759,7 @@
           "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
         }
       ],
-      "x": 823,
+      "x": 737,
       "y": 477,
       "rtype": "Message",
       "rsubtype": "Send Embed",
@@ -827,8 +774,8 @@
         "<:exclamationWarning:939643983460712519> Abym odpowiedział, muszę najpierw znać pytanie...",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
-        "false",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
         "",
         "temp"
       ],
@@ -861,7 +808,7 @@
           "label": "next response",
           "connections": [
             "37eda463-a170-44f9-af54-61378ffc9294",
-            "aa7be26a-000a-4b3b-967b-e3ff4805bd43"
+            "cf02f36d-caa1-41c6-8e12-0f4fcb593c44"
           ]
         }
       ],
@@ -899,7 +846,7 @@
       ],
       "inputs": [],
       "x": 80,
-      "y": 158,
+      "y": 157,
       "perms": []
     },
     {
@@ -942,8 +889,8 @@
           "id": "3efe9546-3c3e-4faa-b0aa-276f1ae738d6"
         }
       ],
-      "x": 423,
-      "y": 587,
+      "x": 247,
+      "y": 609,
       "rtype": "Control",
       "rsubtype": "Multiple Input",
       "messageActionRows": []
@@ -957,13 +904,13 @@
           "label": "responses",
           "connections": [
             "7987fbd5-43b9-4185-aa13-4222cc6a0e3f",
-            "ab106345-ffc7-44d9-bb04-ab170661668a"
+            "e7827514-394d-47d6-b73e-9e6127950b2a"
           ]
         }
       ],
       "inputs": [],
-      "x": 152,
-      "y": 661,
+      "x": 48,
+      "y": 761,
       "perms": []
     },
     {
@@ -975,13 +922,13 @@
           "label": "responses",
           "connections": [
             "500b521e-5110-4ac0-82df-612aa69af0e3",
-            "7606bf29-48b3-450b-9a20-b53d5250bb8e"
+            "187cfcce-3f7a-49ac-8f74-6ea6505a7ec8"
           ]
         }
       ],
       "inputs": [],
       "x": 664,
-      "y": 893,
+      "y": 892,
       "perms": []
     },
     {
@@ -1021,59 +968,14 @@
         {
           "label": "responses",
           "connections": [
-            "f146cec5-7961-4d29-9026-afbc9ce4645b"
-          ]
-        }
-      ],
-      "inputs": [],
-      "x": 1545,
-      "y": 578
-    },
-    {
-      "type": "command",
-      "name": "kostka",
-      "guid": "61b76892-5993-4d2e-98fd-8bb097906a99",
-      "outputs": [
-        {
-          "label": "responses",
-          "connections": [
-            "f146cec5-7961-4d29-9026-afbc9ce4645b"
-          ]
-        }
-      ],
-      "inputs": [],
-      "x": 1541,
-      "y": 468
-    },
-    {
-      "type": "response",
-      "name": "multi4",
-      "guid": "f146cec5-7961-4d29-9026-afbc9ce4645b",
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": [
             "1caf733e-337a-47be-be54-03c72ae2b5b3",
-            "3dfdd1ef-82ac-4664-beac-2f2d49338401"
+            "629d74ba-b1f2-4f9d-9852-43996432e9d1"
           ]
         }
       ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "61b76892-5993-4d2e-98fd-8bb097906a99"
-        },
-        {
-          "label": "trigger",
-          "id": "da5378cb-7d1d-406f-a37c-f33498f495a0"
-        }
-      ],
-      "x": 1761,
-      "y": 426,
-      "rtype": "Control",
-      "rsubtype": "Multiple Input",
-      "messageActionRows": []
+      "inputs": [],
+      "x": 1869,
+      "y": 510
     },
     {
       "type": "response",
@@ -1094,7 +996,7 @@
       "inputs": [
         {
           "label": "trigger",
-          "id": "f146cec5-7961-4d29-9026-afbc9ce4645b"
+          "id": "da5378cb-7d1d-406f-a37c-f33498f495a0"
         }
       ],
       "x": 2042,
@@ -1226,11 +1128,11 @@
         "",
         "",
         "",
-        "<:customDice:939311935185371236> ▸Rzuciłeś kostką d${tempVars.liczbaoczek}, wypadła liczba ${tempVars.dice1}.",
+        "<:diceEmote:941079113697992804>┃Rzuciłeś kostką d${tempVars.liczbaoczek}, wypadła liczba ${tempVars.dice1}.",
         "${dbsVars.CommandAuthor.user.avatarURL}",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
-        "false",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
         "",
         "temp"
       ],
@@ -1322,11 +1224,11 @@
         "",
         "",
         "",
-        "<:dice6:939311935009214535> ▸ Rzuciłeś kostką d6, wypadła liczba ${tempVars.dice2}.",
+        "<:diceEmote:941079113697992804>┃Rzuciłeś kostką d6, wypadła liczba ${tempVars.dice2}.",
         "${dbsVars.CommandAuthor.user.avatarURL}",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
-        "false",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
         "",
         "temp"
       ],
@@ -1358,7 +1260,7 @@
           "label": "responses",
           "connections": [
             "8be9d41c-af15-452f-b04d-be45044de61e",
-            "b86b31de-a955-4257-9003-c8beab83f455"
+            "2f89d81a-7d29-4a19-97e8-8862e2370dfa"
           ]
         }
       ],
@@ -1376,13 +1278,13 @@
           "label": "responses",
           "connections": [
             "8be9d41c-af15-452f-b04d-be45044de61e",
-            "1f0c14f5-8387-40b9-bc3f-d58043d5f8e7"
+            "ec8941db-9b29-474d-badb-bbce3e546247"
           ]
         }
       ],
       "inputs": [],
-      "x": 1722,
-      "y": 922,
+      "x": 1721,
+      "y": 921,
       "perms": []
     },
     {
@@ -1432,8 +1334,8 @@
           "id": "8be9d41c-af15-452f-b04d-be45044de61e"
         }
       ],
-      "x": 2083,
-      "y": 846,
+      "x": 2079,
+      "y": 843,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -1447,8 +1349,8 @@
         "<:servers:939317620602200084> Nazwa serwera: ${dbsVars.guild.name}.\n<:member:939316252088889365> Ilość członków: ${dbsVars.guild.memberCount}\n<:identify:939317620467982457> ID Serwera: ${dbsVars.guild.id}\n",
         "${dbsVars.guild.iconURL}",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.2.1 by Oce Industries.",
-        "false",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
         "",
         "temp"
       ],
@@ -1473,207 +1375,6 @@
     },
     {
       "type": "response",
-      "name": "Reaction1",
-      "guid": "aa7be26a-000a-4b3b-967b-e3ff4805bd43",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "68078daa-9f94-47b5-9020-f520e4654db8"
-        }
-      ],
-      "x": 443,
-      "y": 178,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": [],
-      "valueFields": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_1",
-      "guid": "92654ac7-42ec-424e-9dbb-122abaa1d3d0",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
-        }
-      ],
-      "x": 687,
-      "y": 207,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_1_1",
-      "guid": "b9f22d8c-dc18-4336-a63c-d0a7f84c3a2b",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "6c39847b-300e-476f-a8e4-3115b7d98665"
-        }
-      ],
-      "x": 373,
-      "y": 480,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_1_1_1",
-      "guid": "ab106345-ffc7-44d9-bb04-ab170661668a",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "3efe9546-3c3e-4faa-b0aa-276f1ae738d6"
-        }
-      ],
-      "x": 395,
-      "y": 778,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_2",
-      "guid": "8bf38516-3cba-4342-95d2-f92312af1e84",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "ff89072e-ada9-4fa6-b55a-9efd7431aa8f"
-        }
-      ],
-      "x": 1932,
-      "y": 204,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
       "name": "reakcja_5_1",
       "guid": "04933b81-9c22-4ec8-83c1-774d78162701",
       "reactionFields": [
@@ -1692,8 +1393,8 @@
           "id": []
         }
       ],
-      "x": 1140,
-      "y": 505,
+      "x": 159,
+      "y": 1076,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1701,206 +1402,6 @@
         "0",
         "emoji",
         "emojiuser",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_2_1",
-      "guid": "3dfdd1ef-82ac-4664-beac-2f2d49338401",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "f146cec5-7961-4d29-9026-afbc9ce4645b"
-        }
-      ],
-      "x": 2053,
-      "y": 568,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_2_1_1",
-      "guid": "b86b31de-a955-4257-9003-c8beab83f455",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "1da500b0-04b5-4f2f-b8e4-708075aa6627"
-        }
-      ],
-      "x": 2044,
-      "y": 696,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_2_1_1_1",
-      "guid": "1f0c14f5-8387-40b9-bc3f-d58043d5f8e7",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "afb83643-ec57-4630-98ae-67bbce5861b4"
-        }
-      ],
-      "x": 2105,
-      "y": 993,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_3",
-      "guid": "ce69954d-61d9-4045-865f-5811f0969dfc",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "dad767c0-11a1-4333-8f69-2277a2e9c939"
-        }
-      ],
-      "x": 898,
-      "y": 1174,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
-        "BOOL_TRUE@@"
-      ],
-      "formnames": [
-        "message",
-        "duration",
-        "reactionemoji",
-        "reactionuser",
-        "react"
-      ],
-      "messageActionRows": []
-    },
-    {
-      "type": "response",
-      "name": "Reaction1_3_1",
-      "guid": "7606bf29-48b3-450b-9a20-b53d5250bb8e",
-      "reactionFields": [
-        "<a:checkmark:939632498034495488>"
-      ],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "<a:checkmark:939632498034495488>",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "59dd4913-3d1f-49f4-8a2f-6f75e6c1f073"
-        }
-      ],
-      "x": 933,
-      "y": 1039,
-      "rtype": "Reaction",
-      "rsubtype": "Add Reaction Listener",
-      "formdata": [
-        "${dbsVars.CommandMessage.id}",
-        "0",
-        "emoji1",
-        "react",
         "BOOL_TRUE@@"
       ],
       "formnames": [
@@ -1932,8 +1433,8 @@
           "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
         }
       ],
-      "x": 625,
-      "y": 461,
+      "x": 162,
+      "y": 958,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1952,6 +1453,628 @@
       ],
       "messageActionRows": [],
       "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction",
+      "guid": "cf02f36d-caa1-41c6-8e12-0f4fcb593c44",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "68078daa-9f94-47b5-9020-f520e4654db8"
+        }
+      ],
+      "x": 441,
+      "y": 178,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_1",
+      "guid": "e3e0b6a2-fa64-4572-ad8d-64c6b32e92cf",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "069f2b65-70d0-4668-982f-7e8904058f67"
+        }
+      ],
+      "x": 1089,
+      "y": 135,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_1_1",
+      "guid": "ddc841d6-c06c-4fb1-9a12-f15acf6382a0",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6c39847b-300e-476f-a8e4-3115b7d98665"
+        }
+      ],
+      "x": 252,
+      "y": 486,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_2",
+      "guid": "e7827514-394d-47d6-b73e-9e6127950b2a",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3efe9546-3c3e-4faa-b0aa-276f1ae738d6"
+        }
+      ],
+      "x": 244,
+      "y": 781,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_3",
+      "guid": "187cfcce-3f7a-49ac-8f74-6ea6505a7ec8",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "59dd4913-3d1f-49f4-8a2f-6f75e6c1f073"
+        }
+      ],
+      "x": 1058,
+      "y": 1027,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_3_1",
+      "guid": "9d4a8b53-cf24-4a53-82bc-dcc1d591e26e",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "dad767c0-11a1-4333-8f69-2277a2e9c939"
+        }
+      ],
+      "x": 866,
+      "y": 1052,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "Reaction1_3_1",
+      "guid": "a2a75c5f-3ed7-424a-9b39-5558168299b0",
+      "reactionFields": [
+        "<a:checkmark:939632498034495488>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:checkmark:939632498034495488>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": []
+        }
+      ],
+      "x": -8,
+      "y": 1079,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji1",
+        "react",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_4",
+      "guid": "13f4fc77-3b02-45b0-a869-1943114f2943",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ff89072e-ada9-4fa6-b55a-9efd7431aa8f"
+        }
+      ],
+      "x": 1839,
+      "y": 165,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_4_1",
+      "guid": "2f89d81a-7d29-4a19-97e8-8862e2370dfa",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1da500b0-04b5-4f2f-b8e4-708075aa6627"
+        }
+      ],
+      "x": 2079,
+      "y": 707,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_4_1_1",
+      "guid": "629d74ba-b1f2-4f9d-9852-43996432e9d1",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "da5378cb-7d1d-406f-a37c-f33498f495a0"
+        }
+      ],
+      "x": 2044,
+      "y": 544,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_4_1_2",
+      "guid": "ec8941db-9b29-474d-badb-bbce3e546247",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "afb83643-ec57-4630-98ae-67bbce5861b4"
+        }
+      ],
+      "x": 2078,
+      "y": 971,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiNo",
+      "guid": "243e017b-866d-4c55-8331-dc64a06f6aaf",
+      "reactionFields": [
+        "<a:denied:940392157347459152>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:denied:940392157347459152>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "069f2b65-70d0-4668-982f-7e8904058f67"
+        }
+      ],
+      "x": 1245,
+      "y": 460,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emojino",
+        "nono",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "questionmark",
+      "guid": "069f2b65-70d0-4668-982f-7e8904058f67",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "e3e0b6a2-fa64-4572-ad8d-64c6b32e92cf",
+            "620737d2-0d4b-4055-86f5-3bb03f63cc86"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "243e017b-866d-4c55-8331-dc64a06f6aaf",
+            "6597a8f6-c9ea-4f7e-8f41-4a52be8819a9"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
+        }
+      ],
+      "x": 763,
+      "y": 189,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${dbsVars.CommandMessage.content}",
+        "?"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Changelog_2_1",
+      "guid": "6597a8f6-c9ea-4f7e-8f41-4a52be8819a9",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "069f2b65-70d0-4668-982f-7e8904058f67"
+        }
+      ],
+      "x": 920,
+      "y": 485,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF003F",
+        "Ostrzeżenie!",
+        "",
+        "",
+        "",
+        "",
+        "<:exclamationWarning:939643983460712519> Pytanie musi się kończyć znakiem zapytania.",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
+        "",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "emojiNo_1",
+      "guid": "f7194c4b-e4da-41cb-8e2a-d21dae259ad0",
+      "reactionFields": [
+        "<a:denied:940392157347459152>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:denied:940392157347459152>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
+        }
+      ],
+      "x": 749,
+      "y": 347,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emojino",
+        "nono",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
     }
   ]
 }

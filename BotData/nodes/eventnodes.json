@@ -26,11 +26,23 @@
       "outputs": [
         {
           "label": "responses",
-          "connections": []
+          "connections": [
+            "31a6d0b1-2c46-408b-965f-c53fbee7c2f1",
+            "f7a58137-c35a-4db5-8eb7-59f1c53ee115",
+            "87fdbacc-bda8-440d-b88a-bc3c64ca58b3",
+            "19cac3be-459b-4f5e-aa90-a2c618232525",
+            "51c99656-5952-4364-8372-0d671571b58f",
+            "045cb1cc-fb11-420e-8d9b-115ec77ac072",
+            "c4542cf0-2341-4ae4-8f6f-a958c4c5e7c5",
+            "f4b11cf2-12f4-48a7-9abc-6778e165145d",
+            "992a4af0-7c9a-49cc-9050-b1ffa98f39ca",
+            "20870de4-3c01-4d8d-9d6d-a46cbc3424d2",
+            "44dd2d33-b19b-4881-ab75-3d59aaad0dbe"
+          ]
         }
       ],
       "inputs": [],
-      "x": 101,
+      "x": 102,
       "y": 400,
       "perms": []
     },
@@ -79,8 +91,7 @@
         {
           "label": "responses",
           "connections": [
-            "ef72bb81-ca47-4c02-9841-2e44383f1395",
-            "59a1e7eb-5e0f-4011-a16c-59149ac979fa"
+            "ef72bb81-ca47-4c02-9841-2e44383f1395"
           ]
         }
       ],
@@ -495,7 +506,9 @@
       "outputs": [
         {
           "label": "responses",
-          "connections": []
+          "connections": [
+            "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
+          ]
         }
       ],
       "inputs": [],
@@ -545,6 +558,8 @@
       "guid": "ef72bb81-ca47-4c02-9841-2e44383f1395",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -557,14 +572,14 @@
           "id": "0101bc23-2003-4f05-ab69-bc9ecb4f067e"
         }
       ],
-      "x": 474,
-      "y": 442,
+      "x": 714,
+      "y": 783,
       "rtype": "Bot Action",
       "rsubtype": "Set Bot Activity",
       "formdata": [
-        "▸Wersja 0.2.1  | ▸Prefix: cb!",
+        "▸Wersja 0.3.1  | ▸Prefix: cb!",
         "STREAMING",
-        "https://www.youtube.com/watch?v=pTQuAzcV6S4"
+        "https://www.youtube.com/watch?v=HR5zpFs7YpY"
       ],
       "formnames": [
         "activityname",
@@ -576,8 +591,47 @@
     },
     {
       "type": "response",
-      "name": "bot_status",
-      "guid": "59a1e7eb-5e0f-4011-a16c-59149ac979fa",
+      "name": "check",
+      "guid": "f7a58137-c35a-4db5-8eb7-59f1c53ee115",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "4d09afb0-c28c-45f5-8a34-df17fde2f127"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 500,
+      "y": 55,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "ide sobie"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "odpowiedź",
+      "guid": "4d09afb0-c28c-45f5-8a34-df17fde2f127",
       "reactionFields": [],
       "embedfields": [],
       "outputs": [
@@ -589,18 +643,1030 @@
       "inputs": [
         {
           "label": "trigger",
-          "id": "0101bc23-2003-4f05-ab69-bc9ecb4f067e"
+          "id": "f7a58137-c35a-4db5-8eb7-59f1c53ee115"
         }
       ],
-      "x": 484,
-      "y": 561,
-      "rtype": "Bot Action",
-      "rsubtype": "Set Bot Status",
+      "x": 660,
+      "y": 55,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
       "formdata": [
-        "idle"
+        "${tempVars.anymessage.channel.id}",
+        "Do widzenia.",
+        "",
+        "temp"
       ],
       "formnames": [
-        "presencestatus"
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "string1",
+      "guid": "31a6d0b1-2c46-408b-965f-c53fbee7c2f1",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "bcbcbf1e-93bc-4af4-8e3e-8cdc29c1562c"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 833,
+      "y": 43,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "grzmocenie"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "grzmocenie",
+      "guid": "bcbcbf1e-93bc-4af4-8e3e-8cdc29c1562c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "31a6d0b1-2c46-408b-965f-c53fbee7c2f1"
+        }
+      ],
+      "x": 998,
+      "y": 57,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Skup się na nauce, na seks przyjdzie czas.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "btnInteraction",
+      "guid": "d435b882-21f0-4fe5-b76e-e41e2bb95fec",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "infoButton",
+          "connections": [
+            "f9294f4e-e0d6-41fa-9222-ded8fdc5dcd0",
+            "fcf6cbc1-6a1d-424d-9e18-c639e87fd501"
+          ]
+        },
+        {
+          "label": "cglogButton",
+          "connections": [
+            "66a5ea5b-70e9-47a4-803e-29333eb17ce0",
+            "020034df-7f72-4248-ad3d-8e2d0e22cade"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 289,
+      "y": 3030,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "infoButton",
+        "cglogButton"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "infoButton",
+      "guid": "f9294f4e-e0d6-41fa-9222-ded8fdc5dcd0",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "▸Mój serwer pomocy:",
+          "value": "https://discord.gg/dakPqvc8T6",
+          "inline": "false"
+        },
+        {
+          "name": "▸Zaproś mnie na serwer:",
+          "value": "https://bit.ly/Czarnkobot",
+          "inline": "false"
+        },
+        {
+          "name": "▸Główny serwer autorów:",
+          "value": "https://discord.gg/VVdxvSmkvA",
+          "inline": "false"
+        }
+      ],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
+        }
+      ],
+      "x": 497,
+      "y": 2973,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "FF003F",
+        "Info",
+        "",
+        "",
+        "",
+        "",
+        "**Czarnkobot, v.0.3.1**\n▸Powered by Oce Industries.\n▸Aby zobaczyć listę komend wpisz: cb!help.",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
+        "Komenda wywołana przez: ${tempVars.buttoninteraction.member.displayName}  | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply1",
+      "guid": "020034df-7f72-4248-ad3d-8e2d0e22cade",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
+        }
+      ],
+      "x": 509,
+      "y": 3255,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Oto changelog najnowszej wersji."
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "infoButton_1",
+      "guid": "66a5ea5b-70e9-47a4-803e-29333eb17ce0",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "Potrzebujesz pomocy? Masz jakąś sugestię? Odwiedź nasz serwer wsparcia!",
+          "value": "https://discord.gg/dakPqvc8T6",
+          "inline": "false"
+        }
+      ],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
+        }
+      ],
+      "x": 503,
+      "y": 3146,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "46FF00",
+        "Changelog",
+        "",
+        "",
+        "",
+        "",
+        "Czarnkobot, v.0.3.1\n- Dodanie autorespondera, wyrażenia na które odpowiada są tutaj: https://pastebin.com/LMn8UMs5;\n- Dodanie przycisków pod embedem komendy `help`, dzięki temu można sobie łatwo odpalić changelog i informacje bez wysyłania komendy;\n- Od teraz trzeba koniecznie wpisać `?` zadając pytanie w komendzie `8ball`, inaczej wyskoczy błąd;\n- Kilka nowych memów w randomizerze (głównie tych z kategorii \"nightmare petrol\").",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
+        "Komenda wywołana przez: ${tempVars.buttoninteraction.member.displayName}  | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply1_1",
+      "guid": "fcf6cbc1-6a1d-424d-9e18-c639e87fd501",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
+        }
+      ],
+      "x": 509,
+      "y": 2840,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Oto podstawowe informacje o bocie."
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "grzmocenie2",
+      "guid": "87fdbacc-bda8-440d-b88a-bc3c64ca58b3",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "a79d510e-c841-40ea-bf26-7e6dde22ad96"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 1160,
+      "y": 40,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "Grzmocenie"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "grzmocenie_1",
+      "guid": "a79d510e-c841-40ea-bf26-7e6dde22ad96",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "87fdbacc-bda8-440d-b88a-bc3c64ca58b3"
+        }
+      ],
+      "x": 1328,
+      "y": 55,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Skup się na nauce, na seks przyjdzie czas.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "wódeczka1",
+      "guid": "19cac3be-459b-4f5e-aa90-a2c618232525",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "98ad8c82-c352-4ab5-b027-ac3ad4cdd944"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 482,
+      "y": 190,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "wódeczka"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "odpowiedź_1",
+      "guid": "98ad8c82-c352-4ab5-b027-ac3ad4cdd944",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "19cac3be-459b-4f5e-aa90-a2c618232525"
+        }
+      ],
+      "x": 645,
+      "y": 178,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Polska wódeczka jest najlepsza i dobra.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "daj zaproszenie",
+      "guid": "51c99656-5952-4364-8372-0d671571b58f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "a3e44aaf-3bd0-40c9-b465-7d0428ec78b4"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 487,
+      "y": 332,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "ministrze daj zaproszenie na memiarską"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "zapro1",
+      "guid": "a3e44aaf-3bd0-40c9-b465-7d0428ec78b4",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "51c99656-5952-4364-8372-0d671571b58f"
+        }
+      ],
+      "x": 652,
+      "y": 298,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Proszę bardzo: https://discord.gg/yMVaJkkaC4",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "zapro1_1",
+      "guid": "5c54b6a6-ae45-4be4-96fd-9012c16229ad",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "045cb1cc-fb11-420e-8d9b-115ec77ac072"
+        }
+      ],
+      "x": 1059,
+      "y": 171,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Proszę bardzo: https://discord.gg/VVdxvSmkvA",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "zapro2",
+      "guid": "045cb1cc-fb11-420e-8d9b-115ec77ac072",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "5c54b6a6-ae45-4be4-96fd-9012c16229ad"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 860,
+      "y": 165,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "ministrze daj zaproszenie na harnasiową"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "wyzwisko 1",
+      "guid": "c4542cf0-2341-4ae4-8f6f-a958c4c5e7c5",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "e379276a-0200-41ec-8785-40475ab22c07"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 869,
+      "y": 305,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "przemo ty kurwo"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "w1",
+      "guid": "e379276a-0200-41ec-8785-40475ab22c07",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c4542cf0-2341-4ae4-8f6f-a958c4c5e7c5"
+        }
+      ],
+      "x": 1044,
+      "y": 288,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Co ja, jak ja, ale co ty się ode mnie odczep lepiej.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "liż",
+      "guid": "f4b11cf2-12f4-48a7-9abc-6778e165145d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "e242e943-4ff2-46c7-9e85-99684b536d7b"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 1243,
+      "y": 180,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "przemo liż mi jaja"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "l2",
+      "guid": "e242e943-4ff2-46c7-9e85-99684b536d7b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f4b11cf2-12f4-48a7-9abc-6778e165145d"
+        }
+      ],
+      "x": 1430,
+      "y": 188,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Sam se poliż, co ja jestem od lizania jaj?",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "w2",
+      "guid": "992a4af0-7c9a-49cc-9050-b1ffa98f39ca",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "964f7830-d878-4d42-9877-74c1b2256b72"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 1235,
+      "y": 328,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "przemo ty chuju"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "w22",
+      "guid": "964f7830-d878-4d42-9877-74c1b2256b72",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "992a4af0-7c9a-49cc-9050-b1ffa98f39ca"
+        }
+      ],
+      "x": 1432,
+      "y": 324,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Masz wielką szansę poczuć moją szablę w swojej dupie.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "prawda",
+      "guid": "20870de4-3c01-4d8d-9d6d-a46cbc3424d2",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "60c6feae-2ec0-4434-b519-2e205537c03e"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 657,
+      "y": 416,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "prawda przemo?"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "pr2",
+      "guid": "60c6feae-2ec0-4434-b519-2e205537c03e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "20870de4-3c01-4d8d-9d6d-a46cbc3424d2"
+        }
+      ],
+      "x": 837,
+      "y": 456,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "No a co myślałeś?",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "o2",
+      "guid": "44dd2d33-b19b-4881-ab75-3d59aaad0dbe",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "84925f28-34f1-41b8-b6c6-e652037f104b"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 1069,
+      "y": 436,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${tempVars.anymessage.content}",
+        "co suski myśli o tobie?"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "o_2",
+      "guid": "84925f28-34f1-41b8-b6c6-e652037f104b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "44dd2d33-b19b-4881-ab75-3d59aaad0dbe"
+        }
+      ],
+      "x": 1263,
+      "y": 475,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.anymessage.channel.id}",
+        "Że jestem kanalia, menda, alkoholik i wrzód na zdrowym ciele narodu pracującego miast i wsi. A sam nie lepszy.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
       ],
       "messageActionRows": [],
       "valueFields": []
