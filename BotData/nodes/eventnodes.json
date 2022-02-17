@@ -558,8 +558,6 @@
       "guid": "ef72bb81-ca47-4c02-9841-2e44383f1395",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -577,7 +575,7 @@
       "rtype": "Bot Action",
       "rsubtype": "Set Bot Activity",
       "formdata": [
-        "▸Wersja 0.3.1  | ▸Prefix: cb!",
+        "cb!help  | v.0.4.1",
         "STREAMING",
         "https://www.youtube.com/watch?v=HR5zpFs7YpY"
       ],
@@ -761,6 +759,13 @@
             "66a5ea5b-70e9-47a4-803e-29333eb17ce0",
             "020034df-7f72-4248-ad3d-8e2d0e22cade"
           ]
+        },
+        {
+          "label": "donateButton",
+          "connections": [
+            "80e759c5-040a-4551-a9d3-126abf485cfd",
+            "24b7a41a-9932-4239-aec0-f33ae908d4e0"
+          ]
         }
       ],
       "inputs": [
@@ -779,12 +784,14 @@
       "formnames": [
         "varname",
         "switchvalue1",
-        "switchvalue2"
+        "switchvalue2",
+        "switchvalue3"
       ],
       "messageActionRows": [],
       "valueFields": [
         "infoButton",
-        "cglogButton"
+        "cglogButton",
+        "donateButton"
       ]
     },
     {
@@ -809,6 +816,8 @@
           "inline": "false"
         }
       ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -821,8 +830,8 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 497,
-      "y": 2973,
+      "x": 509,
+      "y": 2969,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -833,10 +842,10 @@
         "",
         "",
         "",
-        "**Czarnkobot, v.0.3.1**\n▸Powered by Oce Industries.\n▸Aby zobaczyć listę komend wpisz: cb!help.",
+        "```             ・📰INFORMACJE📰・```\n**Czarnkobot, v.0.4.1**\n▸Powered by Oce Industries.\n▸Stworzony przez <@!289804025681936386>.\n▸Aby zobaczyć listę komend wpisz: cb!help.\n```                                                       ```",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-        "Komenda wywołana przez: ${tempVars.buttoninteraction.member.displayName}  | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -878,8 +887,8 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 509,
-      "y": 3255,
+      "x": 506,
+      "y": 3254,
       "rtype": "Interaction",
       "rsubtype": "Reply To Interaction With Message",
       "formdata": [
@@ -905,6 +914,8 @@
           "inline": "false"
         }
       ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -917,22 +928,22 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 503,
-      "y": 3146,
+      "x": 508,
+      "y": 3140,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${tempVars.buttoninteraction.channelId}",
-        "46FF00",
-        "Changelog",
+        "333333",
         "",
         "",
         "",
         "",
-        "Czarnkobot, v.0.3.1\n- Dodanie autorespondera, wyrażenia na które odpowiada są tutaj: https://pastebin.com/LMn8UMs5;\n- Dodanie przycisków pod embedem komendy `help`, dzięki temu można sobie łatwo odpalić changelog i informacje bez wysyłania komendy;\n- Od teraz trzeba koniecznie wpisać `?` zadając pytanie w komendzie `8ball`, inaczej wyskoczy błąd;\n- Kilka nowych memów w randomizerze (głównie tych z kategorii \"nightmare petrol\").",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-        "Komenda wywołana przez: ${tempVars.buttoninteraction.member.displayName}  | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "",
+        "```                    ・🆙OPIS ZMIAN🆙・```\n```md\n#Aktualizacja 0.4.1#\n▸ Ładniejszy wygląd embedów;\n▸ Komendy `petrol` (losowy nightmare petrol) i `coin`(rzut monetą);\n▸ Kilka nowych memów i kwestii w randomizerze\n▸ Zmiana opisu statusu bota;\n▸ Ogólne poprawki błędów.\n```\n```                                                       ```",
+        "",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -1667,6 +1678,98 @@
         "messageText",
         "saveToVariable",
         "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "infoButton_1_1",
+      "guid": "80e759c5-040a-4551-a9d3-126abf485cfd",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
+        }
+      ],
+      "x": 510,
+      "y": 3370,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "00FFDB",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "```                ・💲DONATE💲・```\nBot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i **nigdy** takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n```                                                       ```",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply1_2",
+      "guid": "24b7a41a-9932-4239-aec0-f33ae908d4e0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
+        }
+      ],
+      "x": 515,
+      "y": 3482,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Oto link do dotacji:"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
       ],
       "messageActionRows": [],
       "valueFields": []

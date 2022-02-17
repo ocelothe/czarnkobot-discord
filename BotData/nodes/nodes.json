@@ -13,8 +13,8 @@
         }
       ],
       "inputs": [],
-      "x": 71,
-      "y": 77,
+      "x": 36,
+      "y": 67,
       "perms": []
     },
     {
@@ -57,6 +57,21 @@
           "name": "▸serverinfo/serwerinfo",
           "value": "Wyświetla informacje o  serwerze.",
           "inline": "false"
+        },
+        {
+          "name": "▸donate",
+          "value": "Wyświetla linka ze stroną do dobrowolnych dotacji",
+          "inline": "false"
+        },
+        {
+          "name": "▸coin",
+          "value": "Umożliwia rzut monetą.",
+          "inline": "false"
+        },
+        {
+          "name": "▸petrol",
+          "value": "Komenda wysyłająca obrazek z kategorii \"nightmare petrol\". ***BETA***",
+          "inline": "false"
         }
       ],
       "outputs": [
@@ -71,8 +86,8 @@
           "id": "68078daa-9f94-47b5-9020-f520e4654db8"
         }
       ],
-      "x": 437,
-      "y": 63,
+      "x": 391,
+      "y": 66,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -80,13 +95,13 @@
         "4088FF",
         "Pomoc",
         "",
+        "Czarnkobot, v.0.3.1",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ebca6e77.png",
         "",
-        "",
-        "",
-        "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n***WSZYSTKIE KOMENDY:***\n",
+        "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n```         ・💬WSZYSTKIE KOMENDY💬・```",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -114,16 +129,24 @@
             {
               "label": "Info o bocie",
               "customid": "infoButton",
-              "style": "SECONDARY",
-              "emoji": "",
+              "style": "PRIMARY",
+              "emoji": "🔘",
               "URL": "",
               "ephemeral": false
             },
             {
               "label": "Changelog",
               "customid": "cglogButton",
+              "style": "SECONDARY",
+              "emoji": "📰",
+              "URL": "",
+              "ephemeral": false
+            },
+            {
+              "label": "Donate",
+              "customid": "donateButton",
               "style": "SUCCESS",
-              "emoji": "",
+              "emoji": "💲",
               "URL": "",
               "ephemeral": false
             }
@@ -146,8 +169,8 @@
         }
       ],
       "inputs": [],
-      "x": 1655,
-      "y": 94,
+      "x": 2008,
+      "y": 136,
       "perms": []
     },
     {
@@ -184,8 +207,8 @@
           "id": "ff89072e-ada9-4fa6-b55a-9efd7431aa8f"
         }
       ],
-      "x": 1836,
-      "y": 58,
+      "x": 2200,
+      "y": 65,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -196,10 +219,10 @@
         "",
         "",
         "",
-        "**Czarnkobot, v.0.3.1**\n▸Powered by Oce Industries.\n▸Aby zobaczyć listę komend wpisz: cb!help.",
+        "```             ・📰INFORMACJE📰・```\n**Czarnkobot, v.0.4.1**\n▸Powered by Oce Industries.\n▸Stworzony przez <@!289804025681936386>.\n▸Aby zobaczyć listę komend wpisz: cb!help.\n```                                                       ```",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -236,8 +259,8 @@
         }
       ],
       "inputs": [],
-      "x": 199,
-      "y": 358,
+      "x": 110,
+      "y": 873,
       "perms": []
     },
     {
@@ -260,14 +283,14 @@
           "id": "069f2b65-70d0-4668-982f-7e8904058f67"
         }
       ],
-      "x": 1094,
-      "y": 269,
+      "x": 1036,
+      "y": 811,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
       "formdata": [
         "randomizer",
         "1",
-        "20",
+        "27",
         "temp"
       ],
       "formnames": [
@@ -303,8 +326,8 @@
           "id": "620737d2-0d4b-4055-86f5-3bb03f63cc86"
         }
       ],
-      "x": 1293,
-      "y": 268,
+      "x": 1241,
+      "y": 764,
       "rtype": "Spreadsheet",
       "rsubtype": "Get Row",
       "formdata": [
@@ -346,8 +369,8 @@
           "id": "7b4bc800-a8d8-40b2-b056-d5bdd40e0754"
         }
       ],
-      "x": 365,
-      "y": 335,
+      "x": 280,
+      "y": 853,
       "rtype": "Variable",
       "rsubtype": "Store Value in Variable",
       "formdata": [
@@ -392,8 +415,8 @@
           "id": "fe61a642-808c-4328-959a-f729fbb88d19"
         }
       ],
-      "x": 526,
-      "y": 311,
+      "x": 443,
+      "y": 828,
       "rtype": "Variable",
       "rsubtype": "Check If Variable Exists",
       "formdata": [
@@ -421,8 +444,8 @@
         }
       ],
       "inputs": [],
-      "x": 56,
-      "y": 682,
+      "x": 452,
+      "y": 1354,
       "perms": []
     },
     {
@@ -449,22 +472,22 @@
           "id": "7987fbd5-43b9-4185-aa13-4222cc6a0e3f"
         }
       ],
-      "x": 406,
-      "y": 622,
+      "x": 845,
+      "y": 1362,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${dbsVars.CommandChannel.id}",
-        "46FF00",
-        "Changelog",
+        "333333",
+        "Aktualizacja 0.4.1",
         "",
         "",
         "",
         "",
-        "Czarnkobot, v.0.3.1\n- Dodanie autorespondera, wyrażenia na które odpowiada są tutaj: https://pastebin.com/LMn8UMs5;\n- Dodanie przycisków pod embedem komendy `help`, dzięki temu można sobie łatwo odpalić changelog i informacje bez wysyłania komendy;\n- Od teraz trzeba koniecznie wpisać `?` zadając pytanie w komendzie `8ball`, inaczej wyskoczy błąd;\n- Kilka nowych memów w randomizerze (głównie tych z kategorii \"nightmare petrol\").",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "```md\n#Aktualizacja 0.4.1#\n▸ Ładniejszy wygląd embedów;\n▸ Komendy `petrol` (losowy nightmare petrol) i `coin`(rzut monetą);\n▸ Kilka nowych memów i kwestii w randomizerze\n▸ Zmiana opisu statusu bota;\n▸ Ogólne poprawki błędów.\n```\n```                                                       ```",
+        "",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -502,8 +525,8 @@
         }
       ],
       "inputs": [],
-      "x": 634,
-      "y": 975,
+      "x": 1248,
+      "y": 1278,
       "perms": []
     },
     {
@@ -526,14 +549,14 @@
           "id": "500b521e-5110-4ac0-82df-612aa69af0e3"
         }
       ],
-      "x": 1010,
-      "y": 885,
+      "x": 1635,
+      "y": 1274,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
       "formdata": [
         "randomizer",
         "1",
-        "37",
+        "46",
         "temp"
       ],
       "formnames": [
@@ -569,8 +592,8 @@
           "id": "1f73b114-2cbe-4034-8ad9-10fc7e6c8e2e"
         }
       ],
-      "x": 1173,
-      "y": 876,
+      "x": 1811,
+      "y": 1241,
       "rtype": "Spreadsheet",
       "rsubtype": "Get Row",
       "formdata": [
@@ -608,8 +631,8 @@
           "id": "71eee65b-85c5-485d-86e2-5ba786f42193"
         }
       ],
-      "x": -3,
-      "y": 953,
+      "x": 3,
+      "y": 1541,
       "rtype": "Message",
       "rsubtype": "Send Message",
       "formdata": [
@@ -645,8 +668,8 @@
           "id": "71eee65b-85c5-485d-86e2-5ba786f42193"
         }
       ],
-      "x": 1330,
-      "y": 892,
+      "x": 1987,
+      "y": 1289,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -660,7 +683,7 @@
         "",
         "",
         "${tempVars.Response.tresc}",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -702,8 +725,8 @@
           "id": "a3512f7d-a674-4eeb-819b-702f7e119038"
         }
       ],
-      "x": 1477,
-      "y": 275,
+      "x": 1406,
+      "y": 754,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -717,7 +740,7 @@
         "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *${tempVars.Response.tresc}*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
         "${dbsVars.CommandAuthor.user.avatarURL}",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -759,8 +782,8 @@
           "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
         }
       ],
-      "x": 737,
-      "y": 477,
+      "x": 621,
+      "y": 854,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -774,7 +797,7 @@
         "<:exclamationWarning:939643983460712519> Abym odpowiedział, muszę najpierw znać pytanie...",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -826,8 +849,8 @@
           "id": "5211614e-5836-443b-b2ba-d17ebdfab85e"
         }
       ],
-      "x": 266,
-      "y": 63,
+      "x": 216,
+      "y": 73,
       "rtype": "Control",
       "rsubtype": "Multiple Input",
       "messageActionRows": []
@@ -845,8 +868,8 @@
         }
       ],
       "inputs": [],
-      "x": 80,
-      "y": 157,
+      "x": 50,
+      "y": 151,
       "perms": []
     },
     {
@@ -862,8 +885,8 @@
         }
       ],
       "inputs": [],
-      "x": 77,
-      "y": 239,
+      "x": 41,
+      "y": 233,
       "perms": []
     },
     {
@@ -889,8 +912,8 @@
           "id": "3efe9546-3c3e-4faa-b0aa-276f1ae738d6"
         }
       ],
-      "x": 247,
-      "y": 609,
+      "x": 681,
+      "y": 1322,
       "rtype": "Control",
       "rsubtype": "Multiple Input",
       "messageActionRows": []
@@ -909,8 +932,8 @@
         }
       ],
       "inputs": [],
-      "x": 48,
-      "y": 761,
+      "x": 452,
+      "y": 1438,
       "perms": []
     },
     {
@@ -927,8 +950,8 @@
         }
       ],
       "inputs": [],
-      "x": 664,
-      "y": 892,
+      "x": 1255,
+      "y": 1189,
       "perms": []
     },
     {
@@ -954,8 +977,8 @@
           "id": "dad767c0-11a1-4333-8f69-2277a2e9c939"
         }
       ],
-      "x": 852,
-      "y": 864,
+      "x": 1446,
+      "y": 1191,
       "rtype": "Control",
       "rsubtype": "Multiple Input",
       "messageActionRows": []
@@ -974,8 +997,8 @@
         }
       ],
       "inputs": [],
-      "x": 1869,
-      "y": 510
+      "x": 2213,
+      "y": 438
     },
     {
       "type": "response",
@@ -999,8 +1022,8 @@
           "id": "da5378cb-7d1d-406f-a37c-f33498f495a0"
         }
       ],
-      "x": 2042,
-      "y": 435,
+      "x": 2412,
+      "y": 350,
       "rtype": "Variable",
       "rsubtype": "Store Value in Variable",
       "formdata": [
@@ -1044,8 +1067,8 @@
           "id": "1caf733e-337a-47be-be54-03c72ae2b5b3"
         }
       ],
-      "x": 2204,
-      "y": 343,
+      "x": 2580,
+      "y": 355,
       "rtype": "Variable",
       "rsubtype": "Check If Variable Exists",
       "formdata": [
@@ -1079,8 +1102,8 @@
           "id": "f785eb45-53a0-430f-8417-5a5de010af12"
         }
       ],
-      "x": 2422,
-      "y": 341,
+      "x": 2746,
+      "y": 304,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
       "formdata": [
@@ -1116,14 +1139,14 @@
           "id": "149f8df4-d7d8-41bd-87be-4cd169c5be0e"
         }
       ],
-      "x": 2631,
-      "y": 295,
+      "x": 2935,
+      "y": 278,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${dbsVars.CommandChannel.id}",
         "A642FF",
-        "🎲Rzut kostką!🎲",
+        "Rzut kostką!",
         "",
         "",
         "",
@@ -1131,7 +1154,7 @@
         "<:diceEmote:941079113697992804>┃Rzuciłeś kostką d${tempVars.liczbaoczek}, wypadła liczba ${tempVars.dice1}.",
         "${dbsVars.CommandAuthor.user.avatarURL}",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -1175,8 +1198,8 @@
           "id": "f785eb45-53a0-430f-8417-5a5de010af12"
         }
       ],
-      "x": 2421,
-      "y": 493,
+      "x": 2755,
+      "y": 426,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
       "formdata": [
@@ -1212,14 +1235,14 @@
           "id": "45df44f3-9621-4c92-b9bf-4e2d3eb984f3"
         }
       ],
-      "x": 2639,
-      "y": 461,
+      "x": 2932,
+      "y": 404,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${dbsVars.CommandChannel.id}",
         "A642FF",
-        "🎲Rzut kostką!🎲",
+        "Rzut kostką!",
         "",
         "",
         "",
@@ -1227,7 +1250,7 @@
         "<:diceEmote:941079113697992804>┃Rzuciłeś kostką d6, wypadła liczba ${tempVars.dice2}.",
         "${dbsVars.CommandAuthor.user.avatarURL}",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -1265,8 +1288,8 @@
         }
       ],
       "inputs": [],
-      "x": 1721,
-      "y": 830,
+      "x": 2164,
+      "y": 809,
       "perms": []
     },
     {
@@ -1283,8 +1306,8 @@
         }
       ],
       "inputs": [],
-      "x": 1721,
-      "y": 921,
+      "x": 2168,
+      "y": 901,
       "perms": []
     },
     {
@@ -1310,8 +1333,8 @@
           "id": "afb83643-ec57-4630-98ae-67bbce5861b4"
         }
       ],
-      "x": 1911,
-      "y": 811,
+      "x": 2370,
+      "y": 791,
       "rtype": "Control",
       "rsubtype": "Multiple Input",
       "messageActionRows": []
@@ -1334,8 +1357,8 @@
           "id": "8be9d41c-af15-452f-b04d-be45044de61e"
         }
       ],
-      "x": 2079,
-      "y": 843,
+      "x": 2542,
+      "y": 796,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -1349,7 +1372,7 @@
         "<:servers:939317620602200084> Nazwa serwera: ${dbsVars.guild.name}.\n<:member:939316252088889365> Ilość członków: ${dbsVars.guild.memberCount}\n<:identify:939317620467982457> ID Serwera: ${dbsVars.guild.id}\n",
         "${dbsVars.guild.iconURL}",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -1393,8 +1416,8 @@
           "id": []
         }
       ],
-      "x": 159,
-      "y": 1076,
+      "x": 152,
+      "y": 1644,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1433,8 +1456,8 @@
           "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
         }
       ],
-      "x": 162,
-      "y": 958,
+      "x": 154,
+      "y": 1535,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1474,8 +1497,8 @@
           "id": "68078daa-9f94-47b5-9020-f520e4654db8"
         }
       ],
-      "x": 441,
-      "y": 178,
+      "x": 393,
+      "y": 181,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1515,8 +1538,8 @@
           "id": "069f2b65-70d0-4668-982f-7e8904058f67"
         }
       ],
-      "x": 1089,
-      "y": 135,
+      "x": 1007,
+      "y": 688,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1555,8 +1578,8 @@
           "id": "6c39847b-300e-476f-a8e4-3115b7d98665"
         }
       ],
-      "x": 252,
-      "y": 486,
+      "x": 678,
+      "y": 1195,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1595,8 +1618,8 @@
           "id": "3efe9546-3c3e-4faa-b0aa-276f1ae738d6"
         }
       ],
-      "x": 244,
-      "y": 781,
+      "x": 680,
+      "y": 1507,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1635,8 +1658,8 @@
           "id": "59dd4913-3d1f-49f4-8a2f-6f75e6c1f073"
         }
       ],
-      "x": 1058,
-      "y": 1027,
+      "x": 1453,
+      "y": 1374,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1675,8 +1698,8 @@
           "id": "dad767c0-11a1-4333-8f69-2277a2e9c939"
         }
       ],
-      "x": 866,
-      "y": 1052,
+      "x": 1454,
+      "y": 1507,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1715,8 +1738,8 @@
           "id": []
         }
       ],
-      "x": -8,
-      "y": 1079,
+      "x": 0,
+      "y": 1640,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1755,8 +1778,8 @@
           "id": "ff89072e-ada9-4fa6-b55a-9efd7431aa8f"
         }
       ],
-      "x": 1839,
-      "y": 165,
+      "x": 2206,
+      "y": 182,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1795,8 +1818,8 @@
           "id": "1da500b0-04b5-4f2f-b8e4-708075aa6627"
         }
       ],
-      "x": 2079,
-      "y": 707,
+      "x": 2337,
+      "y": 638,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1835,8 +1858,8 @@
           "id": "da5378cb-7d1d-406f-a37c-f33498f495a0"
         }
       ],
-      "x": 2044,
-      "y": 544,
+      "x": 2412,
+      "y": 476,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1875,8 +1898,8 @@
           "id": "afb83643-ec57-4630-98ae-67bbce5861b4"
         }
       ],
-      "x": 2078,
-      "y": 971,
+      "x": 2358,
+      "y": 983,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1915,8 +1938,8 @@
           "id": "069f2b65-70d0-4668-982f-7e8904058f67"
         }
       ],
-      "x": 1245,
-      "y": 460,
+      "x": 1101,
+      "y": 1039,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -1964,8 +1987,8 @@
           "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
         }
       ],
-      "x": 763,
-      "y": 189,
+      "x": 806,
+      "y": 818,
       "rtype": "Variable",
       "rsubtype": "Check If String Contains",
       "formdata": [
@@ -1997,8 +2020,8 @@
           "id": "069f2b65-70d0-4668-982f-7e8904058f67"
         }
       ],
-      "x": 920,
-      "y": 485,
+      "x": 1114,
+      "y": 912,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -2012,7 +2035,7 @@
         "<:exclamationWarning:939643983460712519> Pytanie musi się kończyć znakiem zapytania.",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
         "",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -2056,8 +2079,8 @@
           "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
         }
       ],
-      "x": 749,
-      "y": 347,
+      "x": 623,
+      "y": 968,
       "rtype": "Reaction",
       "rsubtype": "Add Reaction Listener",
       "formdata": [
@@ -2075,6 +2098,808 @@
         "react"
       ],
       "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "chk2",
+      "guid": "a612b719-ce86-4125-8c70-318033432ea8",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "7834535e-3fa8-4925-b421-7be1937d621d",
+            "ea9e1692-b26b-4522-8e7f-d30cab2253db"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "14ca8de5-febd-40b5-ad4d-da36e377af79"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5ba31d95-284c-4290-bb82-9b0a0cb4cb5b"
+        }
+      ],
+      "x": 553,
+      "y": 590,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${dbsVars.CommandMessage.content}",
+        "Nie będzie niczego?"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "help menu_2_1_1_1",
+      "guid": "7834535e-3fa8-4925-b421-7be1937d621d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a612b719-ce86-4125-8c70-318033432ea8"
+        }
+      ],
+      "x": 526,
+      "y": 451,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "12FF77",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *Żeby nie było bandyctwa, żeby nie było złodziejstwa, żeby nie było niczego.*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
+        "${dbsVars.CommandAuthor.user.avatarURL}",
+        "",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "chk1",
+      "guid": "14ca8de5-febd-40b5-ad4d-da36e377af79",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "a4d5dd89-f9b3-4bfe-b914-e051a89839f7",
+            "457835d7-3de8-4283-883f-def73acfeaa9"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a612b719-ce86-4125-8c70-318033432ea8"
+        }
+      ],
+      "x": 717,
+      "y": 590,
+      "rtype": "Variable",
+      "rsubtype": "Check If String Contains",
+      "formdata": [
+        "${dbsVars.CommandMessage.content}",
+        "Lubisz placki?"
+      ],
+      "formnames": [
+        "stringtocheck",
+        "valuetocheck"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "help menu_2_1_1_1_1",
+      "guid": "a4d5dd89-f9b3-4bfe-b914-e051a89839f7",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "14ca8de5-febd-40b5-ad4d-da36e377af79"
+        }
+      ],
+      "x": 688,
+      "y": 453,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "12FF77",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *Tak, a o co chodzi?*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
+        "${dbsVars.CommandAuthor.user.avatarURL}",
+        "",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_1_2",
+      "guid": "ea9e1692-b26b-4522-8e7f-d30cab2253db",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a612b719-ce86-4125-8c70-318033432ea8"
+        }
+      ],
+      "x": 519,
+      "y": 324,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_1_2_1",
+      "guid": "457835d7-3de8-4283-883f-def73acfeaa9",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "14ca8de5-febd-40b5-ad4d-da36e377af79"
+        }
+      ],
+      "x": 688,
+      "y": 332,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "command",
+      "name": "donate",
+      "guid": "c2858676-5e73-4a9b-bc0e-60502de805aa",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "298906a5-f5f5-4f06-902f-2c211cd48f85",
+            "c8cdbc5f-cb34-4fa8-871f-f8069890f637"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 2259,
+      "y": 1198
+    },
+    {
+      "type": "response",
+      "name": "Changelog_4",
+      "guid": "298906a5-f5f5-4f06-902f-2c211cd48f85",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2858676-5e73-4a9b-bc0e-60502de805aa"
+        }
+      ],
+      "x": 2426,
+      "y": 1185,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF003F",
+        "Info",
+        "",
+        "",
+        "",
+        "",
+        "```                ・💲DONATE💲・```\nBot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i nigdy takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n```                                                       ```",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_4_2",
+      "guid": "c8cdbc5f-cb34-4fa8-871f-f8069890f637",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2858676-5e73-4a9b-bc0e-60502de805aa"
+        }
+      ],
+      "x": 2429,
+      "y": 1299,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "command",
+      "name": "coin",
+      "guid": "0027e239-c640-4652-b49e-effbefa777b9",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "6ba9f80c-9809-49c6-af9b-07a75543a878"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 441,
+      "y": 1899
+    },
+    {
+      "type": "response",
+      "name": "coinRandomizer",
+      "guid": "6ba9f80c-9809-49c6-af9b-07a75543a878",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "02320372-925f-4c9c-a5bd-6abb6046e113"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0027e239-c640-4652-b49e-effbefa777b9"
+        }
+      ],
+      "x": 608,
+      "y": 1888,
+      "rtype": "Variable",
+      "rsubtype": "Generate Random Number",
+      "formdata": [
+        "coin",
+        "1",
+        "2",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "min",
+        "max",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "chkcoin",
+      "guid": "02320372-925f-4c9c-a5bd-6abb6046e113",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "7eabc649-be47-45b8-b718-11971d1f4f12"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "9246a368-df12-4806-9a66-1a6cc96bab53"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6ba9f80c-9809-49c6-af9b-07a75543a878"
+        }
+      ],
+      "x": 772,
+      "y": 1894,
+      "rtype": "Variable",
+      "rsubtype": "Check Variable Value",
+      "formdata": [
+        "coin",
+        "temp",
+        "equal to",
+        "1"
+      ],
+      "formnames": [
+        "varname",
+        "saveVarType",
+        "compare",
+        "value"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Changelog_3_2",
+      "guid": "9246a368-df12-4806-9a66-1a6cc96bab53",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "02320372-925f-4c9c-a5bd-6abb6046e113"
+        }
+      ],
+      "x": 937,
+      "y": 2010,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FFC554",
+        "Rzut monetą!",
+        "",
+        "",
+        "",
+        "",
+        "<:moneta:943898633898713118>┃Wypadła reszka!",
+        "${dbsVars.CommandAuthor.user.avatarURL}",
+        "",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Changelog_3_2_2",
+      "guid": "7eabc649-be47-45b8-b718-11971d1f4f12",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "02320372-925f-4c9c-a5bd-6abb6046e113"
+        }
+      ],
+      "x": 939,
+      "y": 1846,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FFC554",
+        "Rzut monetą!",
+        "",
+        "",
+        "",
+        "",
+        "<:moneta:943898633898713118>┃Wypadł orzeł!",
+        "${dbsVars.CommandAuthor.user.avatarURL}",
+        "",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "petrol",
+      "guid": "6abb751b-69c7-4408-92c2-89ac8635d953",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "28eef350-b93b-4bc6-87a5-f88de543597c",
+            "e11a9d52-2a77-4432-a0a3-0f6a2f4a2fa7"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1295,
+      "y": 2349
+    },
+    {
+      "type": "response",
+      "name": "randomPetrol",
+      "guid": "28eef350-b93b-4bc6-87a5-f88de543597c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "216c0157-dee8-46cf-b262-a57edd1b15db"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6abb751b-69c7-4408-92c2-89ac8635d953"
+        }
+      ],
+      "x": 1469,
+      "y": 2363,
+      "rtype": "Variable",
+      "rsubtype": "Generate Random Number",
+      "formdata": [
+        "rndmPetrol",
+        "1",
+        "8",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "min",
+        "max",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "emojiReaction_3_1_1",
+      "guid": "e11a9d52-2a77-4432-a0a3-0f6a2f4a2fa7",
+      "reactionFields": [
+        "<a:approved:940366676023709786>"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "<a:approved:940366676023709786>",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6abb751b-69c7-4408-92c2-89ac8635d953"
+        }
+      ],
+      "x": 1280,
+      "y": 2192,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "0",
+        "emoji",
+        "reaction",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "petrolRandom",
+      "guid": "216c0157-dee8-46cf-b262-a57edd1b15db",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "row is found",
+          "connections": [
+            "71d73d15-af82-4e8c-b619-b61430f17f19"
+          ]
+        },
+        {
+          "label": "row not found",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "28eef350-b93b-4bc6-87a5-f88de543597c"
+        }
+      ],
+      "x": 1642,
+      "y": 2370,
+      "rtype": "Spreadsheet",
+      "rsubtype": "Get Row",
+      "formdata": [
+        "petrol.csv",
+        "liczba",
+        "${tempVars.rndmPetrol}",
+        "petrol",
+        "temp"
+      ],
+      "formnames": [
+        "selectedsheet",
+        "colheader",
+        "colval",
+        "rowvariable",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "help menu_1_1",
+      "guid": "71d73d15-af82-4e8c-b619-b61430f17f19",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "216c0157-dee8-46cf-b262-a57edd1b15db"
+        }
+      ],
+      "x": 1815,
+      "y": 2319,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "70FFC9",
+        "Dobranoc, ${dbsVars.CommandAuthor.displayName} :)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "${tempVars.petrol.tresc}",
+        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
     }
   ]
 }

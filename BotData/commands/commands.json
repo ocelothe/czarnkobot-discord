@@ -43,6 +43,21 @@
               "name": "▸serverinfo/serwerinfo",
               "value": "Wyświetla informacje o  serwerze.",
               "inline": "false"
+            },
+            {
+              "name": "▸donate",
+              "value": "Wyświetla linka ze stroną do dobrowolnych dotacji",
+              "inline": "false"
+            },
+            {
+              "name": "▸coin",
+              "value": "Umożliwia rzut monetą.",
+              "inline": "false"
+            },
+            {
+              "name": "▸petrol",
+              "value": "Komenda wysyłająca obrazek z kategorii \"nightmare petrol\". ***BETA***",
+              "inline": "false"
             }
           ],
           "messageActionRows": [
@@ -52,16 +67,24 @@
                 {
                   "label": "Info o bocie",
                   "customid": "infoButton",
-                  "style": "SECONDARY",
-                  "emoji": "",
+                  "style": "PRIMARY",
+                  "emoji": "🔘",
                   "URL": "",
                   "ephemeral": false
                 },
                 {
                   "label": "Changelog",
                   "customid": "cglogButton",
+                  "style": "SECONDARY",
+                  "emoji": "📰",
+                  "URL": "",
+                  "ephemeral": false
+                },
+                {
+                  "label": "Donate",
+                  "customid": "donateButton",
                   "style": "SUCCESS",
-                  "emoji": "",
+                  "emoji": "💲",
                   "URL": "",
                   "ephemeral": false
                 }
@@ -72,13 +95,13 @@
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "",
-          "authorimageurl": "",
+          "authorname": "Czarnkobot, v.0.3.1",
+          "authorimageurl": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ebca6e77.png",
           "authorlink": "",
-          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n***WSZYSTKIE KOMENDY:***\n",
+          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n```         ・💬WSZYSTKIE KOMENDY💬・```",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -132,10 +155,10 @@
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "**Czarnkobot, v.0.3.1**\n▸Powered by Oce Industries.\n▸Aby zobaczyć listę komend wpisz: cb!help.",
+          "description": "```             ・📰INFORMACJE📰・```\n**Czarnkobot, v.0.4.1**\n▸Powered by Oce Industries.\n▸Stworzony przez <@!289804025681936386>.\n▸Aby zobaczyć listę komend wpisz: cb!help.\n```                                                       ```",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -201,7 +224,7 @@
                   "messageActionRows": [],
                   "varname": "randomizer",
                   "min": "1",
-                  "max": "20",
+                  "max": "27",
                   "savevartype": "temp"
                 },
                 {
@@ -224,7 +247,7 @@
                       "description": "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *${tempVars.Response.tresc}*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
                       "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
                       "image": "",
-                      "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+                      "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
                       "timestamp": "BOOL_TRUE@@",
                       "savetovariable": "",
                       "savetovariabletype": "temp"
@@ -269,7 +292,7 @@
                   "description": "<:exclamationWarning:939643983460712519> Pytanie musi się kończyć znakiem zapytania.",
                   "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
                   "image": "",
-                  "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+                  "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
                   "timestamp": "BOOL_TRUE@@",
                   "savetovariable": "",
                   "savetovariabletype": "temp"
@@ -296,7 +319,7 @@
               "description": "<:exclamationWarning:939643983460712519> Abym odpowiedział, muszę najpierw znać pytanie...",
               "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
               "image": "",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -353,16 +376,16 @@
           ],
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
-          "color": "46FF00",
-          "title": "Changelog",
+          "color": "333333",
+          "title": "Aktualizacja 0.4.1",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, v.0.3.1\n- Dodanie autorespondera, wyrażenia na które odpowiada są tutaj: https://pastebin.com/LMn8UMs5;\n- Dodanie przycisków pod embedem komendy `help`, dzięki temu można sobie łatwo odpalić changelog i informacje bez wysyłania komendy;\n- Od teraz trzeba koniecznie wpisać `?` zadając pytanie w komendzie `8ball`, inaczej wyskoczy błąd;\n- Kilka nowych memów w randomizerze (głównie tych z kategorii \"nightmare petrol\").",
-          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+          "description": "```md\n#Aktualizacja 0.4.1#\n▸ Ładniejszy wygląd embedów;\n▸ Komendy `petrol` (losowy nightmare petrol) i `coin`(rzut monetą);\n▸ Kilka nowych memów i kwestii w randomizerze\n▸ Zmiana opisu statusu bota;\n▸ Ogólne poprawki błędów.\n```\n```                                                       ```",
+          "thumbnail": "",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -394,7 +417,7 @@
           "messageActionRows": [],
           "varname": "randomizer",
           "min": "1",
-          "max": "37",
+          "max": "46",
           "savevartype": "temp"
         },
         {
@@ -417,7 +440,7 @@
               "description": "",
               "thumbnail": "",
               "image": "${tempVars.Response.tresc}",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -476,6 +499,21 @@
               "name": "▸serverinfo/serwerinfo",
               "value": "Wyświetla informacje o  serwerze.",
               "inline": "false"
+            },
+            {
+              "name": "▸donate",
+              "value": "Wyświetla linka ze stroną do dobrowolnych dotacji",
+              "inline": "false"
+            },
+            {
+              "name": "▸coin",
+              "value": "Umożliwia rzut monetą.",
+              "inline": "false"
+            },
+            {
+              "name": "▸petrol",
+              "value": "Komenda wysyłająca obrazek z kategorii \"nightmare petrol\". ***BETA***",
+              "inline": "false"
             }
           ],
           "messageActionRows": [
@@ -485,16 +523,24 @@
                 {
                   "label": "Info o bocie",
                   "customid": "infoButton",
-                  "style": "SECONDARY",
-                  "emoji": "",
+                  "style": "PRIMARY",
+                  "emoji": "🔘",
                   "URL": "",
                   "ephemeral": false
                 },
                 {
                   "label": "Changelog",
                   "customid": "cglogButton",
+                  "style": "SECONDARY",
+                  "emoji": "📰",
+                  "URL": "",
+                  "ephemeral": false
+                },
+                {
+                  "label": "Donate",
+                  "customid": "donateButton",
                   "style": "SUCCESS",
-                  "emoji": "",
+                  "emoji": "💲",
                   "URL": "",
                   "ephemeral": false
                 }
@@ -505,13 +551,13 @@
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "",
-          "authorimageurl": "",
+          "authorname": "Czarnkobot, v.0.3.1",
+          "authorimageurl": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ebca6e77.png",
           "authorlink": "",
-          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n***WSZYSTKIE KOMENDY:***\n",
+          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n```         ・💬WSZYSTKIE KOMENDY💬・```",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -575,6 +621,21 @@
               "name": "▸serverinfo/serwerinfo",
               "value": "Wyświetla informacje o  serwerze.",
               "inline": "false"
+            },
+            {
+              "name": "▸donate",
+              "value": "Wyświetla linka ze stroną do dobrowolnych dotacji",
+              "inline": "false"
+            },
+            {
+              "name": "▸coin",
+              "value": "Umożliwia rzut monetą.",
+              "inline": "false"
+            },
+            {
+              "name": "▸petrol",
+              "value": "Komenda wysyłająca obrazek z kategorii \"nightmare petrol\". ***BETA***",
+              "inline": "false"
             }
           ],
           "messageActionRows": [
@@ -584,16 +645,24 @@
                 {
                   "label": "Info o bocie",
                   "customid": "infoButton",
-                  "style": "SECONDARY",
-                  "emoji": "",
+                  "style": "PRIMARY",
+                  "emoji": "🔘",
                   "URL": "",
                   "ephemeral": false
                 },
                 {
                   "label": "Changelog",
                   "customid": "cglogButton",
+                  "style": "SECONDARY",
+                  "emoji": "📰",
+                  "URL": "",
+                  "ephemeral": false
+                },
+                {
+                  "label": "Donate",
+                  "customid": "donateButton",
                   "style": "SUCCESS",
-                  "emoji": "",
+                  "emoji": "💲",
                   "URL": "",
                   "ephemeral": false
                 }
@@ -604,13 +673,13 @@
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "",
-          "authorimageurl": "",
+          "authorname": "Czarnkobot, v.0.3.1",
+          "authorimageurl": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ebca6e77.png",
           "authorlink": "",
-          "description": "Czarnkobot, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n***WSZYSTKIE KOMENDY:***\n",
+          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n```         ・💬WSZYSTKIE KOMENDY💬・```",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -662,16 +731,16 @@
           ],
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
-          "color": "46FF00",
-          "title": "Changelog",
+          "color": "333333",
+          "title": "Aktualizacja 0.4.1",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Czarnkobot, v.0.3.1\n- Dodanie autorespondera, wyrażenia na które odpowiada są tutaj: https://pastebin.com/LMn8UMs5;\n- Dodanie przycisków pod embedem komendy `help`, dzięki temu można sobie łatwo odpalić changelog i informacje bez wysyłania komendy;\n- Od teraz trzeba koniecznie wpisać `?` zadając pytanie w komendzie `8ball`, inaczej wyskoczy błąd;\n- Kilka nowych memów w randomizerze (głównie tych z kategorii \"nightmare petrol\").",
-          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/5748e188.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+          "description": "```md\n#Aktualizacja 0.4.1#\n▸ Ładniejszy wygląd embedów;\n▸ Komendy `petrol` (losowy nightmare petrol) i `coin`(rzut monetą);\n▸ Kilka nowych memów i kwestii w randomizerze\n▸ Zmiana opisu statusu bota;\n▸ Ogólne poprawki błędów.\n```\n```                                                       ```",
+          "thumbnail": "",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -703,7 +772,7 @@
           "messageActionRows": [],
           "varname": "randomizer",
           "min": "1",
-          "max": "37",
+          "max": "46",
           "savevartype": "temp"
         },
         {
@@ -726,7 +795,7 @@
               "description": "",
               "thumbnail": "",
               "image": "${tempVars.Response.tresc}",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -791,7 +860,7 @@
               "messageActionRows": [],
               "channelname": "${dbsVars.CommandChannel.id}",
               "color": "A642FF",
-              "title": "🎲Rzut kostką!🎲",
+              "title": "Rzut kostką!",
               "url": "",
               "authorname": "",
               "authorimageurl": "",
@@ -799,7 +868,7 @@
               "description": "<:diceEmote:941079113697992804>┃Rzuciłeś kostką d${tempVars.liczbaoczek}, wypadła liczba ${tempVars.dice1}.",
               "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
               "image": "",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -823,7 +892,7 @@
               "messageActionRows": [],
               "channelname": "${dbsVars.CommandChannel.id}",
               "color": "A642FF",
-              "title": "🎲Rzut kostką!🎲",
+              "title": "Rzut kostką!",
               "url": "",
               "authorname": "",
               "authorimageurl": "",
@@ -831,7 +900,7 @@
               "description": "<:diceEmote:941079113697992804>┃Rzuciłeś kostką d6, wypadła liczba ${tempVars.dice2}.",
               "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
               "image": "",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -876,7 +945,7 @@
           "description": "<:servers:939317620602200084> Nazwa serwera: ${dbsVars.guild.name}.\n<:member:939316252088889365> Ilość członków: ${dbsVars.guild.memberCount}\n<:identify:939317620467982457> ID Serwera: ${dbsVars.guild.id}\n",
           "thumbnail": "${dbsVars.guild.iconURL}",
           "image": "",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -916,10 +985,181 @@
           "description": "<:servers:939317620602200084> Nazwa serwera: ${dbsVars.guild.name}.\n<:member:939316252088889365> Ilość członków: ${dbsVars.guild.memberCount}\n<:identify:939317620467982457> ID Serwera: ${dbsVars.guild.id}\n",
           "thumbnail": "${dbsVars.guild.iconURL}",
           "image": "",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.3.1 by Oce Industries.",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "donate",
+      "actions": [
+        {
+          "name": "Changelog_4",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FF003F",
+          "title": "Info",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "```                ・💲DONATE💲・```\nBot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i nigdy takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n```                                                       ```",
+          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "emojiReaction_4_2",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:approved:940366676023709786>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji",
+          "reactionuser": "reaction",
+          "react": "BOOL_TRUE@@"
+        }
+      ]
+    },
+    {
+      "name": "coin",
+      "actions": [
+        {
+          "name": "coinRandomizer",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "coin",
+          "min": "1",
+          "max": "2",
+          "savevartype": "temp"
+        },
+        {
+          "name": "chkcoin",
+          "category": "Variable",
+          "type": "Check Variable Value",
+          "trueActions": [
+            {
+              "name": "Changelog_3_2_2",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "FFC554",
+              "title": "Rzut monetą!",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "<:moneta:943898633898713118>┃Wypadł orzeł!",
+              "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+              "image": "",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "Changelog_3_2",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "FFC554",
+              "title": "Rzut monetą!",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "<:moneta:943898633898713118>┃Wypadła reszka!",
+              "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+              "image": "",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "messageActionRows": [],
+          "varname": "coin",
+          "savevartype": "temp",
+          "compare": "equal to",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "name": "petrol",
+      "actions": [
+        {
+          "name": "randomPetrol",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "rndmPetrol",
+          "min": "1",
+          "max": "8",
+          "savevartype": "temp"
+        },
+        {
+          "name": "emojiReaction_3_1_1",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "<a:approved:940366676023709786>": []
+          },
+          "messageActionRows": [],
+          "message": "${dbsVars.CommandMessage.id}",
+          "duration": "0",
+          "reactionemoji": "emoji",
+          "reactionuser": "reaction",
+          "react": "BOOL_TRUE@@"
+        },
+        {
+          "name": "petrolRandom",
+          "category": "Spreadsheet",
+          "type": "Get Row",
+          "trueActions": [
+            {
+              "name": "help menu_1_1",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "70FFC9",
+              "title": "Dobranoc, ${dbsVars.CommandAuthor.displayName} :)",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "",
+              "thumbnail": "",
+              "image": "${tempVars.petrol.tresc}",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "selectedsheet": "petrol.csv",
+          "colheader": "liczba",
+          "colval": "${tempVars.rndmPetrol}",
+          "rowvariable": "petrol",
+          "savevartype": "temp"
         }
       ]
     }
