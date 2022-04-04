@@ -570,14 +570,14 @@
           "id": "0101bc23-2003-4f05-ab69-bc9ecb4f067e"
         }
       ],
-      "x": 714,
-      "y": 783,
+      "x": 502,
+      "y": 561,
       "rtype": "Bot Action",
       "rsubtype": "Set Bot Activity",
       "formdata": [
-        "cb!help  | v.0.4.1",
+        "cb!help  | v.0.4.2",
         "STREAMING",
-        "https://www.youtube.com/watch?v=HR5zpFs7YpY"
+        "https://www.youtube.com/watch?v=lPJV6pTFRPc"
       ],
       "formnames": [
         "activityname",
@@ -611,8 +611,8 @@
           "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
         }
       ],
-      "x": 500,
-      "y": 55,
+      "x": 499,
+      "y": 48,
       "rtype": "Variable",
       "rsubtype": "Check If String Contains",
       "formdata": [
@@ -749,8 +749,8 @@
         {
           "label": "infoButton",
           "connections": [
-            "f9294f4e-e0d6-41fa-9222-ded8fdc5dcd0",
-            "fcf6cbc1-6a1d-424d-9e18-c639e87fd501"
+            "fcf6cbc1-6a1d-424d-9e18-c639e87fd501",
+            "f9294f4e-e0d6-41fa-9222-ded8fdc5dcd0"
           ]
         },
         {
@@ -774,8 +774,8 @@
           "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
         }
       ],
-      "x": 289,
-      "y": 3030,
+      "x": 319,
+      "y": 2864,
       "rtype": "Control",
       "rsubtype": "Switch Case",
       "formdata": [
@@ -816,8 +816,6 @@
           "inline": "false"
         }
       ],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -830,22 +828,22 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 509,
-      "y": 2969,
+      "x": 842,
+      "y": 2754,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${tempVars.buttoninteraction.channelId}",
         "FF003F",
-        "Info",
+        "・📰INFORMACJE📰・",
         "",
         "",
         "",
         "",
-        "```             ・📰INFORMACJE📰・```\n**Czarnkobot, v.0.4.1**\n▸Powered by Oce Industries.\n▸Stworzony przez <@!289804025681936386>.\n▸Aby zobaczyć listę komend wpisz: cb!help.\n```                                                       ```",
+        "***Czarnkobot, v.0.4.2***\n> ▸Powered by Oce Industries.\n> ▸Stworzony przez <@!289804025681936386>.\n> ▸Aby zobaczyć listę komend wpisz: cb!help.\n\n`                                                                       `",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
+        "Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -887,8 +885,8 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 506,
-      "y": 3254,
+      "x": 881,
+      "y": 3075,
       "rtype": "Interaction",
       "rsubtype": "Reply To Interaction With Message",
       "formdata": [
@@ -928,22 +926,22 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 508,
-      "y": 3140,
+      "x": 854,
+      "y": 3170,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${tempVars.buttoninteraction.channelId}",
         "333333",
+        "・🆙OPIS ZMIAN🆙・",
         "",
         "",
         "",
         "",
+        "***Aktualizacja 0.4.2***\n> Drobne poprawki błędów.\n> Dodanie kilku memów do randomizera.\n> Dodanie kilku odpowiedzi do randomizera.\n> Dodano w ramach testu predefiniowane odpowiedzi, jak chcecie przetestować to zapytajcie go o kobietę lub czy gapi się na wasz bebech. ( ͡° ͜ʖ ͡°)\n\n`                                                                       `",
         "",
-        "```                    ・🆙OPIS ZMIAN🆙・```\n```md\n#Aktualizacja 0.4.1#\n▸ Ładniejszy wygląd embedów;\n▸ Komendy `petrol` (losowy nightmare petrol) i `coin`(rzut monetą);\n▸ Kilka nowych memów i kwestii w randomizerze\n▸ Zmiana opisu statusu bota;\n▸ Ogólne poprawki błędów.\n```\n```                                                       ```",
-        "",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
-        "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
+        "Czarnkobot, v.0.4.2 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -985,8 +983,8 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 509,
-      "y": 2840,
+      "x": 843,
+      "y": 2869,
       "rtype": "Interaction",
       "rsubtype": "Reply To Interaction With Message",
       "formdata": [
@@ -1098,7 +1096,7 @@
           "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
         }
       ],
-      "x": 482,
+      "x": 502,
       "y": 190,
       "rtype": "Variable",
       "rsubtype": "Check If String Contains",
@@ -1131,8 +1129,8 @@
           "id": "19cac3be-459b-4f5e-aa90-a2c618232525"
         }
       ],
-      "x": 645,
-      "y": 178,
+      "x": 662,
+      "y": 179,
       "rtype": "Message",
       "rsubtype": "Send Message",
       "formdata": [
@@ -1174,8 +1172,8 @@
           "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
         }
       ],
-      "x": 487,
-      "y": 332,
+      "x": 500,
+      "y": 340,
       "rtype": "Variable",
       "rsubtype": "Check If String Contains",
       "formdata": [
@@ -1688,8 +1686,6 @@
       "guid": "80e759c5-040a-4551-a9d3-126abf485cfd",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -1702,21 +1698,21 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 510,
-      "y": 3370,
+      "x": 959,
+      "y": 3652,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${tempVars.buttoninteraction.channelId}",
         "00FFDB",
+        "・💸DONATE💸・",
         "",
         "",
         "",
         "",
-        "",
-        "```                ・💲DONATE💲・```\nBot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i **nigdy** takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n```                                                       ```",
+        "Bot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i **nigdy** takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n\n`                                                                       `",
         "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+        "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
         "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
         "BOOL_TRUE@@",
         "",
@@ -1759,8 +1755,8 @@
           "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
         }
       ],
-      "x": 515,
-      "y": 3482,
+      "x": 954,
+      "y": 3517,
       "rtype": "Interaction",
       "rsubtype": "Reply To Interaction With Message",
       "formdata": [
@@ -1770,6 +1766,147 @@
       "formnames": [
         "interactionobject",
         "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "numGen",
+      "guid": "05acb985-4aea-49da-b695-a714bd9d249c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b8e2f750-3d08-46ba-a387-1109f4d6d43a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d435b882-21f0-4fe5-b76e-e41e2bb95fec"
+        }
+      ],
+      "x": 992,
+      "y": 3319,
+      "rtype": "Variable",
+      "rsubtype": "Generate Random Number",
+      "formdata": [
+        "numGen",
+        "1",
+        "46",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "min",
+        "max",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "spreadsheeet",
+      "guid": "b8e2f750-3d08-46ba-a387-1109f4d6d43a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "row is found",
+          "connections": [
+            "4833d6f8-4d2c-4306-8643-9dd4f8a2bc68"
+          ]
+        },
+        {
+          "label": "row not found",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "05acb985-4aea-49da-b695-a714bd9d249c"
+        }
+      ],
+      "x": 1128,
+      "y": 3200,
+      "rtype": "Spreadsheet",
+      "rsubtype": "Get Row",
+      "formdata": [
+        "randomeme.csv",
+        "liczba",
+        "${tempVars.numGen}",
+        "memGen",
+        "temp"
+      ],
+      "formnames": [
+        "selectedsheet",
+        "colheader",
+        "colval",
+        "rowvariable",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "meme",
+      "guid": "4833d6f8-4d2c-4306-8643-9dd4f8a2bc68",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b8e2f750-3d08-46ba-a387-1109f4d6d43a"
+        }
+      ],
+      "x": 1292,
+      "y": 3201,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "70FFC9",
+        "Oto twój mem, ${tempVars.buttoninteraction.member.displayName}",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "${tempVars.memGen.tresc}",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
       ],
       "messageActionRows": [],
       "valueFields": []

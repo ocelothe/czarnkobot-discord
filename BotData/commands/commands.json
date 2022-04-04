@@ -68,7 +68,7 @@
                   "label": "Info o bocie",
                   "customid": "infoButton",
                   "style": "PRIMARY",
-                  "emoji": "🔘",
+                  "emoji": "⚠️",
                   "URL": "",
                   "ephemeral": false
                 },
@@ -95,12 +95,12 @@
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "Czarnkobot, v.0.3.1",
+          "authorname": "Czarnkobot, v.0.4.2",
           "authorimageurl": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ebca6e77.png",
           "authorlink": "",
-          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n```         ・💬WSZYSTKIE KOMENDY💬・```",
+          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n`                                                                       `  \n\n***・💬WSZYSTKIE KOMENDY💬・***\n",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
           "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
@@ -150,15 +150,15 @@
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "FF003F",
-          "title": "Info",
+          "title": "・📰INFORMACJE📰・",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "```             ・📰INFORMACJE📰・```\n**Czarnkobot, v.0.4.1**\n▸Powered by Oce Industries.\n▸Stworzony przez <@!289804025681936386>.\n▸Aby zobaczyć listę komend wpisz: cb!help.\n```                                                       ```",
+          "description": "***Czarnkobot, v.0.4.2***\n> ▸Powered by Oce Industries.\n> ▸Stworzony przez <@!289804025681936386>.\n> ▸Aby zobaczyć listę komend wpisz: cb!help.\n\n`                                                                       `",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -199,12 +199,32 @@
           "type": "Check If Variable Exists",
           "trueActions": [
             {
-              "name": "questionmark",
+              "name": "chk4",
               "category": "Variable",
               "type": "Check If String Contains",
               "trueActions": [
                 {
-                  "name": "emojiReaction_1",
+                  "name": "help menu_2_1_1_1_2",
+                  "category": "Message",
+                  "type": "Send Embed",
+                  "messageActionRows": [],
+                  "channelname": "${dbsVars.CommandChannel.id}",
+                  "color": "12FF77",
+                  "title": "",
+                  "url": "",
+                  "authorname": "",
+                  "authorimageurl": "",
+                  "authorlink": "",
+                  "description": "",
+                  "thumbnail": "",
+                  "image": "https://i.imgur.com/FPPNKN3.png",
+                  "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+                  "timestamp": "BOOL_TRUE@@",
+                  "savetovariable": "",
+                  "savetovariabletype": "temp"
+                },
+                {
+                  "name": "emojiReaction_1_2_2",
                   "category": "Reaction",
                   "type": "Add Reaction Listener",
                   "reactionActions": {
@@ -216,24 +236,16 @@
                   "reactionemoji": "emoji",
                   "reactionuser": "reaction",
                   "react": "BOOL_TRUE@@"
-                },
+                }
+              ],
+              "falseActions": [
                 {
-                  "name": "randomizer",
+                  "name": "chk2",
                   "category": "Variable",
-                  "type": "Generate Random Number",
-                  "messageActionRows": [],
-                  "varname": "randomizer",
-                  "min": "1",
-                  "max": "27",
-                  "savevartype": "temp"
-                },
-                {
-                  "name": "responsesheet",
-                  "category": "Spreadsheet",
-                  "type": "Get Row",
+                  "type": "Check If String Contains",
                   "trueActions": [
                     {
-                      "name": "help menu_2",
+                      "name": "help menu_2_1_1_1",
                       "category": "Message",
                       "type": "Send Embed",
                       "messageActionRows": [],
@@ -244,63 +256,327 @@
                       "authorname": "",
                       "authorimageurl": "",
                       "authorlink": "",
-                      "description": "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *${tempVars.Response.tresc}*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
-                      "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
-                      "image": "",
+                      "description": "",
+                      "thumbnail": "",
+                      "image": "https://i.imgur.com/FPPNKN3.png",
                       "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
                       "timestamp": "BOOL_TRUE@@",
                       "savetovariable": "",
                       "savetovariabletype": "temp"
+                    },
+                    {
+                      "name": "emojiReaction_1_2",
+                      "category": "Reaction",
+                      "type": "Add Reaction Listener",
+                      "reactionActions": {
+                        "<a:approved:940366676023709786>": []
+                      },
+                      "messageActionRows": [],
+                      "message": "${dbsVars.CommandMessage.id}",
+                      "duration": "0",
+                      "reactionemoji": "emoji",
+                      "reactionuser": "reaction",
+                      "react": "BOOL_TRUE@@"
                     }
                   ],
-                  "falseActions": [],
+                  "falseActions": [
+                    {
+                      "name": "chk1",
+                      "category": "Variable",
+                      "type": "Check If String Contains",
+                      "trueActions": [
+                        {
+                          "name": "help menu_2_1_1_1_1",
+                          "category": "Message",
+                          "type": "Send Embed",
+                          "messageActionRows": [],
+                          "channelname": "${dbsVars.CommandChannel.id}",
+                          "color": "12FF77",
+                          "title": "",
+                          "url": "",
+                          "authorname": "",
+                          "authorimageurl": "",
+                          "authorlink": "",
+                          "description": "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *Zerknąłem tylko.*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
+                          "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+                          "image": "",
+                          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+                          "timestamp": "BOOL_TRUE@@",
+                          "savetovariable": "",
+                          "savetovariabletype": "temp"
+                        },
+                        {
+                          "name": "emojiReaction_1_2_1",
+                          "category": "Reaction",
+                          "type": "Add Reaction Listener",
+                          "reactionActions": {
+                            "<a:approved:940366676023709786>": []
+                          },
+                          "messageActionRows": [],
+                          "message": "${dbsVars.CommandMessage.id}",
+                          "duration": "0",
+                          "reactionemoji": "emoji",
+                          "reactionuser": "reaction",
+                          "react": "BOOL_TRUE@@"
+                        }
+                      ],
+                      "falseActions": [
+                        {
+                          "name": "chk3",
+                          "category": "Variable",
+                          "type": "Check If String Contains",
+                          "trueActions": [
+                            {
+                              "name": "help menu_2_1_1_1_1_1",
+                              "category": "Message",
+                              "type": "Send Embed",
+                              "messageActionRows": [],
+                              "channelname": "${dbsVars.CommandChannel.id}",
+                              "color": "12FF77",
+                              "title": "",
+                              "url": "",
+                              "authorname": "",
+                              "authorimageurl": "",
+                              "authorlink": "",
+                              "description": "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *Zerknąłem tylko.*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
+                              "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+                              "image": "",
+                              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+                              "timestamp": "BOOL_TRUE@@",
+                              "savetovariable": "",
+                              "savetovariabletype": "temp"
+                            },
+                            {
+                              "name": "emojiReaction_1_2_1_1",
+                              "category": "Reaction",
+                              "type": "Add Reaction Listener",
+                              "reactionActions": {
+                                "<a:approved:940366676023709786>": []
+                              },
+                              "messageActionRows": [],
+                              "message": "${dbsVars.CommandMessage.id}",
+                              "duration": "0",
+                              "reactionemoji": "emoji",
+                              "reactionuser": "reaction",
+                              "react": "BOOL_TRUE@@"
+                            }
+                          ],
+                          "falseActions": [
+                            {
+                              "name": "chk5",
+                              "category": "Variable",
+                              "type": "Check If String Contains",
+                              "trueActions": [
+                                {
+                                  "name": "help menu_2_1_1_1_3",
+                                  "category": "Message",
+                                  "type": "Send Embed",
+                                  "messageActionRows": [],
+                                  "channelname": "${dbsVars.CommandChannel.id}",
+                                  "color": "12FF77",
+                                  "title": "",
+                                  "url": "",
+                                  "authorname": "",
+                                  "authorimageurl": "",
+                                  "authorlink": "",
+                                  "description": "",
+                                  "thumbnail": "",
+                                  "image": "https://i.imgur.com/FPPNKN3.png",
+                                  "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+                                  "timestamp": "BOOL_TRUE@@",
+                                  "savetovariable": "",
+                                  "savetovariabletype": "temp"
+                                },
+                                {
+                                  "name": "emojiReaction_1_2_1_1_1",
+                                  "category": "Reaction",
+                                  "type": "Add Reaction Listener",
+                                  "reactionActions": {
+                                    "<a:approved:940366676023709786>": []
+                                  },
+                                  "messageActionRows": [],
+                                  "message": "${dbsVars.CommandMessage.id}",
+                                  "duration": "0",
+                                  "reactionemoji": "emoji",
+                                  "reactionuser": "reaction",
+                                  "react": "BOOL_TRUE@@"
+                                }
+                              ],
+                              "falseActions": [
+                                {
+                                  "name": "chk6",
+                                  "category": "Variable",
+                                  "type": "Check If String Contains",
+                                  "trueActions": [
+                                    {
+                                      "name": "help menu_2_1_1_1_3_1",
+                                      "category": "Message",
+                                      "type": "Send Embed",
+                                      "messageActionRows": [],
+                                      "channelname": "${dbsVars.CommandChannel.id}",
+                                      "color": "12FF77",
+                                      "title": "",
+                                      "url": "",
+                                      "authorname": "",
+                                      "authorimageurl": "",
+                                      "authorlink": "",
+                                      "description": "",
+                                      "thumbnail": "",
+                                      "image": "https://i.imgur.com/FPPNKN3.png",
+                                      "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+                                      "timestamp": "BOOL_TRUE@@",
+                                      "savetovariable": "",
+                                      "savetovariabletype": "temp"
+                                    },
+                                    {
+                                      "name": "emojiReaction_1_2_1_2",
+                                      "category": "Reaction",
+                                      "type": "Add Reaction Listener",
+                                      "reactionActions": {
+                                        "<a:approved:940366676023709786>": []
+                                      },
+                                      "messageActionRows": [],
+                                      "message": "${dbsVars.CommandMessage.id}",
+                                      "duration": "0",
+                                      "reactionemoji": "emoji",
+                                      "reactionuser": "reaction",
+                                      "react": "BOOL_TRUE@@"
+                                    }
+                                  ],
+                                  "falseActions": [
+                                    {
+                                      "name": "questionmark",
+                                      "category": "Variable",
+                                      "type": "Check If String Contains",
+                                      "trueActions": [
+                                        {
+                                          "name": "emojiReaction_1",
+                                          "category": "Reaction",
+                                          "type": "Add Reaction Listener",
+                                          "reactionActions": {
+                                            "<a:approved:940366676023709786>": []
+                                          },
+                                          "messageActionRows": [],
+                                          "message": "${dbsVars.CommandMessage.id}",
+                                          "duration": "0",
+                                          "reactionemoji": "emoji",
+                                          "reactionuser": "reaction",
+                                          "react": "BOOL_TRUE@@"
+                                        },
+                                        {
+                                          "name": "randomizer",
+                                          "category": "Variable",
+                                          "type": "Generate Random Number",
+                                          "messageActionRows": [],
+                                          "varname": "randomizer",
+                                          "min": "1",
+                                          "max": "36",
+                                          "savevartype": "temp"
+                                        },
+                                        {
+                                          "name": "responsesheet",
+                                          "category": "Spreadsheet",
+                                          "type": "Get Row",
+                                          "trueActions": [
+                                            {
+                                              "name": "help menu_2",
+                                              "category": "Message",
+                                              "type": "Send Embed",
+                                              "messageActionRows": [],
+                                              "channelname": "${dbsVars.CommandChannel.id}",
+                                              "color": "12FF77",
+                                              "title": "",
+                                              "url": "",
+                                              "authorname": "",
+                                              "authorimageurl": "",
+                                              "authorlink": "",
+                                              "description": "**Pytanie**: *${tempVars.pytanie}*\n**Odpowiedź**: *${tempVars.Response.tresc}*\n**Pytający**: *${dbsVars.CommandAuthor.displayName}*",
+                                              "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
+                                              "image": "",
+                                              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
+                                              "timestamp": "BOOL_TRUE@@",
+                                              "savetovariable": "",
+                                              "savetovariabletype": "temp"
+                                            }
+                                          ],
+                                          "falseActions": [],
+                                          "messageActionRows": [],
+                                          "selectedsheet": "8ball2.csv",
+                                          "colheader": "liczba",
+                                          "colval": "${tempVars.randomizer}",
+                                          "rowvariable": "Response",
+                                          "savevartype": "temp"
+                                        }
+                                      ],
+                                      "falseActions": [
+                                        {
+                                          "name": "emojiNo",
+                                          "category": "Reaction",
+                                          "type": "Add Reaction Listener",
+                                          "reactionActions": {
+                                            "<a:denied:940392157347459152>": []
+                                          },
+                                          "messageActionRows": [],
+                                          "message": "${dbsVars.CommandMessage.id}",
+                                          "duration": "0",
+                                          "reactionemoji": "emojino",
+                                          "reactionuser": "nono",
+                                          "react": "BOOL_TRUE@@"
+                                        },
+                                        {
+                                          "name": "Changelog_2_1",
+                                          "category": "Message",
+                                          "type": "Send Embed",
+                                          "messageActionRows": [],
+                                          "channelname": "${dbsVars.CommandChannel.id}",
+                                          "color": "FF003F",
+                                          "title": "Ostrzeżenie!",
+                                          "url": "",
+                                          "authorname": "",
+                                          "authorimageurl": "",
+                                          "authorlink": "",
+                                          "description": "<:exclamationWarning:939643983460712519> Pytanie musi się kończyć znakiem zapytania.",
+                                          "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
+                                          "image": "",
+                                          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
+                                          "timestamp": "BOOL_TRUE@@",
+                                          "savetovariable": "",
+                                          "savetovariabletype": "temp"
+                                        }
+                                      ],
+                                      "messageActionRows": [],
+                                      "stringtocheck": "${dbsVars.CommandMessage.content}",
+                                      "valuetocheck": "?"
+                                    }
+                                  ],
+                                  "messageActionRows": [],
+                                  "stringtocheck": "${dbsVars.CommandMessage.content}",
+                                  "valuetocheck": "kobieta?"
+                                }
+                              ],
+                              "messageActionRows": [],
+                              "stringtocheck": "${dbsVars.CommandMessage.content}",
+                              "valuetocheck": "Kobieta?"
+                            }
+                          ],
+                          "messageActionRows": [],
+                          "stringtocheck": "${dbsVars.CommandMessage.content}",
+                          "valuetocheck": "gapisz mi się na bebech?"
+                        }
+                      ],
+                      "messageActionRows": [],
+                      "stringtocheck": "${dbsVars.CommandMessage.content}",
+                      "valuetocheck": "Gapisz mi się na bebech?"
+                    }
+                  ],
                   "messageActionRows": [],
-                  "selectedsheet": "8ball - sheet1.csv",
-                  "colheader": "liczba",
-                  "colval": "${tempVars.randomizer}",
-                  "rowvariable": "Response",
-                  "savevartype": "temp"
-                }
-              ],
-              "falseActions": [
-                {
-                  "name": "emojiNo",
-                  "category": "Reaction",
-                  "type": "Add Reaction Listener",
-                  "reactionActions": {
-                    "<a:denied:940392157347459152>": []
-                  },
-                  "messageActionRows": [],
-                  "message": "${dbsVars.CommandMessage.id}",
-                  "duration": "0",
-                  "reactionemoji": "emojino",
-                  "reactionuser": "nono",
-                  "react": "BOOL_TRUE@@"
-                },
-                {
-                  "name": "Changelog_2_1",
-                  "category": "Message",
-                  "type": "Send Embed",
-                  "messageActionRows": [],
-                  "channelname": "${dbsVars.CommandChannel.id}",
-                  "color": "FF003F",
-                  "title": "Ostrzeżenie!",
-                  "url": "",
-                  "authorname": "",
-                  "authorimageurl": "",
-                  "authorlink": "",
-                  "description": "<:exclamationWarning:939643983460712519> Pytanie musi się kończyć znakiem zapytania.",
-                  "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
-                  "image": "",
-                  "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
-                  "timestamp": "BOOL_TRUE@@",
-                  "savetovariable": "",
-                  "savetovariabletype": "temp"
+                  "stringtocheck": "${dbsVars.CommandMessage.content}",
+                  "valuetocheck": "Woman?"
                 }
               ],
               "messageActionRows": [],
               "stringtocheck": "${dbsVars.CommandMessage.content}",
-              "valuetocheck": "?"
+              "valuetocheck": "woman?"
             }
           ],
           "falseActions": [
@@ -319,7 +595,7 @@
               "description": "<:exclamationWarning:939643983460712519> Abym odpowiedział, muszę najpierw znać pytanie...",
               "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d073a54c.png",
               "image": "",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -377,15 +653,15 @@
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "333333",
-          "title": "Aktualizacja 0.4.1",
+          "title": "・🆙OPIS ZMIAN🆙・",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "```md\n#Aktualizacja 0.4.1#\n▸ Ładniejszy wygląd embedów;\n▸ Komendy `petrol` (losowy nightmare petrol) i `coin`(rzut monetą);\n▸ Kilka nowych memów i kwestii w randomizerze\n▸ Zmiana opisu statusu bota;\n▸ Ogólne poprawki błędów.\n```\n```                                                       ```",
+          "description": "***Aktualizacja 0.4.2***\n> Drobne poprawki błędów.\n> Dodanie kilku memów do randomizera.\n> Dodanie kilku odpowiedzi do randomizera.\n> Dodano w ramach testu predefiniowane odpowiedzi, jak chcecie przetestować to zapytajcie go o kobietę lub czy gapi się na wasz bebech. ( ͡° ͜ʖ ͡°)\n\n`                                                                       `",
           "thumbnail": "",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -417,7 +693,7 @@
           "messageActionRows": [],
           "varname": "randomizer",
           "min": "1",
-          "max": "46",
+          "max": "55",
           "savevartype": "temp"
         },
         {
@@ -426,7 +702,7 @@
           "type": "Get Row",
           "trueActions": [
             {
-              "name": "help menu_1",
+              "name": "help menu_1_2_1",
               "category": "Message",
               "type": "Send Embed",
               "messageActionRows": [],
@@ -440,7 +716,7 @@
               "description": "",
               "thumbnail": "",
               "image": "${tempVars.Response.tresc}",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -448,7 +724,7 @@
           ],
           "falseActions": [],
           "messageActionRows": [],
-          "selectedsheet": "randomeme.csv",
+          "selectedsheet": "memeRandomizer.csv",
           "colheader": "liczba",
           "colval": "${tempVars.randomizer}",
           "rowvariable": "Response",
@@ -524,7 +800,7 @@
                   "label": "Info o bocie",
                   "customid": "infoButton",
                   "style": "PRIMARY",
-                  "emoji": "🔘",
+                  "emoji": "⚠️",
                   "URL": "",
                   "ephemeral": false
                 },
@@ -551,12 +827,12 @@
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "Czarnkobot, v.0.3.1",
+          "authorname": "Czarnkobot, v.0.4.2",
           "authorimageurl": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ebca6e77.png",
           "authorlink": "",
-          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n```         ・💬WSZYSTKIE KOMENDY💬・```",
+          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n`                                                                       `  \n\n***・💬WSZYSTKIE KOMENDY💬・***\n",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
           "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
@@ -646,7 +922,7 @@
                   "label": "Info o bocie",
                   "customid": "infoButton",
                   "style": "PRIMARY",
-                  "emoji": "🔘",
+                  "emoji": "⚠️",
                   "URL": "",
                   "ephemeral": false
                 },
@@ -673,12 +949,12 @@
           "color": "4088FF",
           "title": "Pomoc",
           "url": "",
-          "authorname": "Czarnkobot, v.0.3.1",
+          "authorname": "Czarnkobot, v.0.4.2",
           "authorimageurl": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ebca6e77.png",
           "authorlink": "",
-          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n```         ・💬WSZYSTKIE KOMENDY💬・```",
+          "description": "**Czarnkobot**, bot stworzony 4fun, aby pośmiać się z pewnego ministra i pierdolonych przez niego głupot.\nBot ten jest stworzony czysto dla ***zabawy***, a nie po to by kogoś obrazić.\n\n`                                                                       `  \n\n***・💬WSZYSTKIE KOMENDY💬・***\n",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
           "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
@@ -732,15 +1008,15 @@
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "333333",
-          "title": "Aktualizacja 0.4.1",
+          "title": "・🆙OPIS ZMIAN🆙・",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "```md\n#Aktualizacja 0.4.1#\n▸ Ładniejszy wygląd embedów;\n▸ Komendy `petrol` (losowy nightmare petrol) i `coin`(rzut monetą);\n▸ Kilka nowych memów i kwestii w randomizerze\n▸ Zmiana opisu statusu bota;\n▸ Ogólne poprawki błędów.\n```\n```                                                       ```",
+          "description": "***Aktualizacja 0.4.2***\n> Drobne poprawki błędów.\n> Dodanie kilku memów do randomizera.\n> Dodanie kilku odpowiedzi do randomizera.\n> Dodano w ramach testu predefiniowane odpowiedzi, jak chcecie przetestować to zapytajcie go o kobietę lub czy gapi się na wasz bebech. ( ͡° ͜ʖ ͡°)\n\n`                                                                       `",
           "thumbnail": "",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -772,7 +1048,7 @@
           "messageActionRows": [],
           "varname": "randomizer",
           "min": "1",
-          "max": "46",
+          "max": "55",
           "savevartype": "temp"
         },
         {
@@ -781,7 +1057,7 @@
           "type": "Get Row",
           "trueActions": [
             {
-              "name": "help menu_1",
+              "name": "help menu_1_2_1",
               "category": "Message",
               "type": "Send Embed",
               "messageActionRows": [],
@@ -795,7 +1071,7 @@
               "description": "",
               "thumbnail": "",
               "image": "${tempVars.Response.tresc}",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -803,7 +1079,7 @@
           ],
           "falseActions": [],
           "messageActionRows": [],
-          "selectedsheet": "randomeme.csv",
+          "selectedsheet": "memeRandomizer.csv",
           "colheader": "liczba",
           "colval": "${tempVars.randomizer}",
           "rowvariable": "Response",
@@ -865,10 +1141,10 @@
               "authorname": "",
               "authorimageurl": "",
               "authorlink": "",
-              "description": "<:diceEmote:941079113697992804>┃Rzuciłeś kostką d${tempVars.liczbaoczek}, wypadła liczba ${tempVars.dice1}.",
+              "description": "<:dice:944664446729609336>\n┃Rzuciłeś kostką d${tempVars.liczbaoczek}, wypadła liczba ${tempVars.dice1}.",
               "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
               "image": "",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -897,10 +1173,10 @@
               "authorname": "",
               "authorimageurl": "",
               "authorlink": "",
-              "description": "<:diceEmote:941079113697992804>┃Rzuciłeś kostką d6, wypadła liczba ${tempVars.dice2}.",
+              "description": "<:dice:944664446729609336>┃Rzuciłeś kostką d6, wypadła liczba ${tempVars.dice2}.",
               "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
               "image": "",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -945,7 +1221,7 @@
           "description": "<:servers:939317620602200084> Nazwa serwera: ${dbsVars.guild.name}.\n<:member:939316252088889365> Ilość członków: ${dbsVars.guild.memberCount}\n<:identify:939317620467982457> ID Serwera: ${dbsVars.guild.id}\n",
           "thumbnail": "${dbsVars.guild.iconURL}",
           "image": "",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -985,7 +1261,7 @@
           "description": "<:servers:939317620602200084> Nazwa serwera: ${dbsVars.guild.name}.\n<:member:939316252088889365> Ilość członków: ${dbsVars.guild.memberCount}\n<:identify:939317620467982457> ID Serwera: ${dbsVars.guild.id}\n",
           "thumbnail": "${dbsVars.guild.iconURL}",
           "image": "",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -1002,15 +1278,15 @@
           "messageActionRows": [],
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "FF003F",
-          "title": "Info",
+          "title": "・💸DONATE💸・",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "```                ・💲DONATE💲・```\nBot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i nigdy takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n```                                                       ```",
+          "description": "Bot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i nigdy takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n\n`                                                                       `",
           "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
-          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+          "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
+          "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
           "timestamp": "BOOL_TRUE@@",
           "savetovariable": "",
           "savetovariabletype": "temp"
@@ -1064,7 +1340,7 @@
               "description": "<:moneta:943898633898713118>┃Wypadł orzeł!",
               "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
               "image": "",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -1086,7 +1362,7 @@
               "description": "<:moneta:943898633898713118>┃Wypadła reszka!",
               "thumbnail": "${dbsVars.CommandAuthor.user.avatarURL}",
               "image": "",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"
@@ -1147,7 +1423,7 @@
               "description": "",
               "thumbnail": "",
               "image": "${tempVars.petrol.tresc}",
-              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+              "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.2 by Oce Industries.",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"

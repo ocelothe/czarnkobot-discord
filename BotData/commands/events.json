@@ -271,9 +271,9 @@
           "category": "Bot Action",
           "type": "Set Bot Activity",
           "messageActionRows": [],
-          "activityname": "cb!help  | v.0.4.1",
+          "activityname": "cb!help  | v.0.4.2",
           "activitytype": "STREAMING",
-          "streamurl": "https://www.youtube.com/watch?v=HR5zpFs7YpY"
+          "streamurl": "https://www.youtube.com/watch?v=lPJV6pTFRPc"
         }
       ],
       "var": {}
@@ -465,6 +465,14 @@
           "valueActions": {
             "infoButton": [
               {
+                "name": "reply1_1",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Oto podstawowe informacje o bocie."
+              },
+              {
                 "name": "infoButton",
                 "category": "Message",
                 "type": "Send Embed",
@@ -488,26 +496,18 @@
                 "messageActionRows": [],
                 "channelname": "${tempVars.buttoninteraction.channelId}",
                 "color": "FF003F",
-                "title": "Info",
+                "title": "・📰INFORMACJE📰・",
                 "url": "",
                 "authorname": "",
                 "authorimageurl": "",
                 "authorlink": "",
-                "description": "```             ・📰INFORMACJE📰・```\n**Czarnkobot, v.0.4.1**\n▸Powered by Oce Industries.\n▸Stworzony przez <@!289804025681936386>.\n▸Aby zobaczyć listę komend wpisz: cb!help.\n```                                                       ```",
+                "description": "***Czarnkobot, v.0.4.2***\n> ▸Powered by Oce Industries.\n> ▸Stworzony przez <@!289804025681936386>.\n> ▸Aby zobaczyć listę komend wpisz: cb!help.\n\n`                                                                       `",
                 "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-                "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
-                "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+                "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
+                "footer": "Czarnkobot, v.0.4.1 by Oce Industries.",
                 "timestamp": "BOOL_TRUE@@",
                 "savetovariable": "",
                 "savetovariabletype": "temp"
-              },
-              {
-                "name": "reply1_1",
-                "category": "Interaction",
-                "type": "Reply To Interaction With Message",
-                "messageActionRows": [],
-                "interactionobject": "${tempVars.buttoninteraction}",
-                "messagetext": "Oto podstawowe informacje o bocie."
               }
             ],
             "cglogButton": [
@@ -525,15 +525,15 @@
                 "messageActionRows": [],
                 "channelname": "${tempVars.buttoninteraction.channelId}",
                 "color": "333333",
-                "title": "",
+                "title": "・🆙OPIS ZMIAN🆙・",
                 "url": "",
                 "authorname": "",
                 "authorimageurl": "",
                 "authorlink": "",
-                "description": "```                    ・🆙OPIS ZMIAN🆙・```\n```md\n#Aktualizacja 0.4.1#\n▸ Ładniejszy wygląd embedów;\n▸ Komendy `petrol` (losowy nightmare petrol) i `coin`(rzut monetą);\n▸ Kilka nowych memów i kwestii w randomizerze\n▸ Zmiana opisu statusu bota;\n▸ Ogólne poprawki błędów.\n```\n```                                                       ```",
+                "description": "***Aktualizacja 0.4.2***\n> Drobne poprawki błędów.\n> Dodanie kilku memów do randomizera.\n> Dodanie kilku odpowiedzi do randomizera.\n> Dodano w ramach testu predefiniowane odpowiedzi, jak chcecie przetestować to zapytajcie go o kobietę lub czy gapi się na wasz bebech. ( ͡° ͜ʖ ͡°)\n\n`                                                                       `",
                 "thumbnail": "",
-                "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
-                "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
+                "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
+                "footer": "Czarnkobot, v.0.4.2 by Oce Industries.",
                 "timestamp": "BOOL_TRUE@@",
                 "savetovariable": "",
                 "savetovariabletype": "temp"
@@ -555,14 +555,14 @@
                 "messageActionRows": [],
                 "channelname": "${tempVars.buttoninteraction.channelId}",
                 "color": "00FFDB",
-                "title": "",
+                "title": "・💸DONATE💸・",
                 "url": "",
                 "authorname": "",
                 "authorimageurl": "",
                 "authorlink": "",
-                "description": "```                ・💲DONATE💲・```\nBot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i **nigdy** takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n```                                                       ```",
+                "description": "Bot ten został stworzony 4fun. Nie ma on żadnych funkcji ukrytych za paywallem i **nigdy** takich rzeczy miał nie będzie. Jednakże, jeśli bot ci się podoba, możesz wesprzeć autorkę drobnym datkiem na: \nhttps://tipply.pl/u/ocelothe2k1\nZa każdy datek serdecznie dziękuję.\n\n`                                                                       `",
                 "thumbnail": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/d58d4e08.png",
-                "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/28d3ea67.png",
+                "image": "https://cdn.e-z.host/e-zimagehosting/f1fede9f-9651-4c18-8695-f5f3ff1b9e8d/ed59db64.png",
                 "footer": "Komenda wywołana przez: ${dbsVars.CommandAuthor.displayName} | Czarnkobot, v.0.4.1 by Oce Industries.",
                 "timestamp": "BOOL_TRUE@@",
                 "savetovariable": "",
